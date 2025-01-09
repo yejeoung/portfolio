@@ -1,0 +1,113 @@
+/* 
+작성 날짜 : 2024-12-30
+파일의 역할 : App css
+*/
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    display: block;
+    box-sizing: border-box;
+    width: 1280px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.language {
+    margin-top: 5px;
+    text-align: right;
+}
+
+.language span {
+    margin: 0 10px 0 10px;
+}
+
+.h_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 25px;
+    height: 55px;
+}
+
+.h_top li {
+    display: inline-block;
+    margin: 0 10px 0 10px;
+    list-style: none;
+    font-size: 12px;
+    color: #666666;
+}
+
+.h_top li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.h_top a svg {
+    width: 36px;
+    height: 36px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logo a {
+    margin-top: 20px;
+}
+
+.logo {
+    flex: none;
+    height: 40px;
+}
+
+.search {
+    flex: none;
+    padding: 0 10px 0 10px;
+    width: 570px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-280px);
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+
+.serach {
+    align-items: center;
+}
+
+.LoginIcon {
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 1280px;
+    height: 80px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 0 10px 0 10px;
+    list-style: none;
+}
+
+.category {
+    display: flex;
+}
+
+.category svg {
+    margin-right: 10px;
+}

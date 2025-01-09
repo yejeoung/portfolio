@@ -1,0 +1,80 @@
+/* 
+작성 날짜 : 2025-01-09
+파일의 역할 : home css
+*/
+
+.slide {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    height: 580px;
+}
+
+.cntArea {
+    justify-content: center;
+    text-align: left;
+    align-content: center;
+    padding-top: 40px;
+    margin: 0 auto;
+    width: 1280px;
+    height: 580px;
+}
+
+.card {
+    display: flex;
+    height: 20px;
+    font-size: 14px;
+    line-height: 1em;
+    letter-spacing: -0.01em;
+}
+
+.cardName1 {
+    align-content: center;
+    padding: 0 10px;
+    font-weight: 600;
+    background: #ffff82;
+    color: #000000;
+}
+
+.cardName2 {
+    align-content: center;
+    padding: 0 10px;
+    margin: 0 1px;
+    font-weight: 400;
+    background: #000000;
+    color: #ffffff;
+}
+
+.name {
+    height: 124px;
+    margin: 20px 0 50px 0;
+}
+
+.areaName1{
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.areaName2 {
+    font-size: 52px;
+}
+
+.price {
+    display: flex;
+    height: 30px;
+}
+
+.pri1 {
+    padding-right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.pri2 {
+    font-weight: 300;
+    margin-top: 5px;
+    font-size: 20px;
+    text-decoration: line-through;
+    color: #cdcdcd;
+}
