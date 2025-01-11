@@ -3,6 +3,24 @@
 파일의 역할 : App css
 */
 
+.carousel{
+    position: relative;
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.carousel-control-prev-icon {
+    position: relative;
+    top: 20px;
+    left: 100px;
+}
+
+.carousel-control-next-icon{
+    position: relative;
+    top: 20px;
+    left: -100px;
+}
+
 a {
     text-decoration: none;
     color: inherit;
