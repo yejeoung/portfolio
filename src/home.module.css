@@ -3,13 +3,14 @@
 파일의 역할 : home css
 */
 
-.slide {
+.main {
     justify-content: center;
     text-align: center;
     margin: 0 auto;
     height: 580px;
 }
 
+/* 배너 */
 .cntArea {
     justify-content: center;
     text-align: left;
@@ -76,4 +77,139 @@
     font-size: 20px;
     text-decoration: line-through;
     color: #cdcdcd;
+}
+
+/* 출시 된 제품 */
+
+.content {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1280px;
+}
+
+.newItem{
+    display: grid;
+    justify-content: center;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+.newText{
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.line {
+    justify-content: center;
+    margin: 0 auto; 
+    padding-top: 20px;
+    width: 40px;
+    border-bottom: 1px solid #000000;
+}
+
+.newInner {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.innerText {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.innerText1 {
+    margin-right: 10px;
+}
+
+.innerText2 {
+    color: #ff0000;
+}
+
+.newHash {
+    display: flex;
+    justify-content: center;
+}
+
+.hashText {
+    padding: 0 15px 0 15px;
+    margin: 0 5px 0 5px;
+    color: #009d5e;
+    border-radius: 20px;
+    border: 1px solid #009d5e;
+}
+
+/* 출시 전 제품 */
+.newItem2{
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: 0 auto;
+    width: 1280px;
+}
+
+.item {
+    margin: 0 40px 0 40px;
+}
+
+.item img {
+    width: 600px;
+    height: 396px;
+}
+
+.itemText {
+    text-align: left;
+    margin: 40px 40px 60px 40px;
+}
+
+.itemText1{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.itemText2{
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* 지금 잘나가는 제품 */
+.nowBest {
+    margin: 0 auto;
+    width: 1280px;
+}
+
+.nowHeader {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1280px;
+}
+
+.nbhName1{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.more {
+    display: flex;
+    align-items: center;
+}
+
+.more p {
+    margin-right: 10px;
+    font-size: 14px;
+    
+}
+
+.nowNav li {
+    display: inline-block;
+    list-style: none;
 }
