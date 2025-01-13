@@ -1,0 +1,33 @@
+.nbContent {
+    display: flex;
+    width: 1280px;
+}
+
+.nowBest {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nowBest img {
+    width: 240px;
+    height: 320px;
+}
+
+.nIText {
+    width: 240px;
+}
+
+.nIText1 {
+    display: flex;
+    font-size: 14px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.nIText2 {
+    display: flex;
+    width: 190px;
+    justify-content: space-between;
+}
