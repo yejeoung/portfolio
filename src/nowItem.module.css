@@ -1,8 +1,3 @@
-.nbContent {
-    display: flex;
-    width: 1280px;
-}
-
 .nowBest {
     display: flex;
     justify-content: space-between;
@@ -57,7 +52,6 @@
     margin-top: 15px;
     height: 25px;
     font-size: 12px;
-    vertical-align: bottom;
 }
 
 .score {

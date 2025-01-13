@@ -4,6 +4,7 @@ import { GoPlus } from "react-icons/go";
 import { IoIosArrowForward } from "react-icons/io";
 import NowItem from './nowItem';
 import styles from './home.module.css';
+import SuggestItem from './suggestItem';
 
 // 작성 날짜 : 2025-01-09
 // 파일의 역할 : home
@@ -184,9 +185,7 @@ function HomeArea() {
                             <li>미용소품</li>
                         </ul>
                     </div>
-                    <div>
-                        <NowItem />
-                    </div>
+                    <div><NowItem /></div>
                 </div>
 
                 {/* 추천 제품 */}
@@ -194,14 +193,15 @@ function HomeArea() {
                     <div className={styles.bHeader}>
                         <div className={styles.bhName}>
                             <p className={styles.bhName1}>지금 제일 잘나가요</p>
-                            {/* 1시간마다 시간 바뀌는 기능 넣기 */}
                         </div>
                         <div className={styles.more}>
                             <p>더보기</p>
                             <div><IoIosArrowForward size={20} /></div>
                         </div>
                     </div>
-                    
+                    <div>
+                        <SuggestItem />
+                    </div>
                 </div>
             </article>
         </>
