@@ -184,20 +184,21 @@
 .nowBest {
     margin: 0 auto;
     width: 1280px;
+    margin-bottom: 200px;
 }
 
-.nowHeader {
+.bHeader {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     width: 1280px;
 }
 
-.nbhName {
+.bhName {
     margin-bottom: 30px;
 }
 
-.nbhName1 {
+.bhName1 {
     font-size: 24px;
     font-weight: bold;
 }

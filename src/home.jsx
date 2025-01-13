@@ -17,7 +17,7 @@ function HomeArea() {
 
     return (
         <>
-                {/* 배너 */}
+            {/* 배너 */}
             <section className={styles.main}>
                 <Carousel activeIndex={index} onSelect={handleSelect}>
                     <Carousel.Item>
@@ -110,7 +110,7 @@ function HomeArea() {
             <article className='content'>
                 {/* 출시 된 제품 */}
                 <div className={styles.newItem}>
-                    <img src="/images/newItem01.jpg" alt=""/>
+                    <img src="/images/newItem01.jpg" alt="" />
                     <div className={styles.newText}>
                         <p>PDRN 대용량 출시기념!</p>
                         <p>파우치+사은품 증정!</p>
@@ -165,9 +165,9 @@ function HomeArea() {
 
                 {/* 지금 잘나가는 제품 */}
                 <div className={styles.nowBest}>
-                    <div className={styles.nowHeader}>
-                        <div className={styles.nbhName}>
-                            <p className={styles.nbhName1}>지금 제일 잘나가요</p>
+                    <div className={styles.bHeader}>
+                        <div className={styles.bhName}>
+                            <p className={styles.bhName1}>지금 제일 잘나가요</p>
                             {/* 1시간마다 시간 바뀌는 기능 넣기 */}
                         </div>
                         <div className={styles.more}>
@@ -187,6 +187,21 @@ function HomeArea() {
                     <div>
                         <NowItem />
                     </div>
+                </div>
+
+                {/* 추천 제품 */}
+                <div className={styles.suggest}>
+                    <div className={styles.bHeader}>
+                        <div className={styles.bhName}>
+                            <p className={styles.bhName1}>지금 제일 잘나가요</p>
+                            {/* 1시간마다 시간 바뀌는 기능 넣기 */}
+                        </div>
+                        <div className={styles.more}>
+                            <p>더보기</p>
+                            <div><IoIosArrowForward size={20} /></div>
+                        </div>
+                    </div>
+                    
                 </div>
             </article>
         </>

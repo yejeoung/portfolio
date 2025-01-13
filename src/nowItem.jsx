@@ -2,6 +2,9 @@ import React from "react";
 import { FaStar } from "react-icons/fa";
 import styles from "./nowItem.module.css";
 
+// 작성 날짜 : 2025-01-13
+// 파일의 역할 : 지금 제일 잘 나가는 제품 item
+
 function NowItem() {
     return (
         <>
@@ -19,8 +22,8 @@ function NowItem() {
                             <p className={styles.nIT3}>58,000</p>
                         </div>
                         <div className={styles.star}>
-                            <div><FaStar /></div>
-                            <p>4.9 (26,169)</p>
+                            <span className={styles.starIcon}><FaStar /></span>
+                            <span className={styles.score}>4.9 (26,169)</span>
                         </div>
                     </div>
                 </div>
@@ -36,8 +39,8 @@ function NowItem() {
                             <p className={styles.nIT3}>40,000</p>
                         </div>
                         <div className={styles.star}>
-                            <div><FaStar /></div>
-                            <p>4.9 (10,092)</p>
+                            <span className={styles.starIcon}><FaStar /></span>
+                            <span className={styles.score}>4.9 (10,092)</span>
                         </div>
                     </div>
                 </div>
@@ -53,8 +56,8 @@ function NowItem() {
                             <p className={styles.nIT3}>114,000</p>
                         </div>
                         <div className={styles.star}>
-                            <div><FaStar /></div>
-                            <p>4.9 (10,092)</p>
+                            <span className={styles.starIcon}><FaStar /></span>
+                            <span className={styles.score}>4.9 (10,092)</span>
                         </div>
                     </div>
                 </div>
@@ -68,8 +71,8 @@ function NowItem() {
                             <p className={styles.nIT1}>2,000</p>
                         </div>
                         <div className={styles.star}>
-                            <div><FaStar /></div>
-                            <p>4.9 (50,199)</p>
+                            <span className={styles.starIcon}><FaStar /></span>
+                            <span className={styles.score}>4.9 (50,199)</span>
                         </div>
                     </div>
                 </div>
@@ -85,8 +88,8 @@ function NowItem() {
                             <p className={styles.nIT3}>57,000</p>
                         </div>
                         <div className={styles.star}>
-                            <div><FaStar /></div>
-                            <p>4.9 (10,092)</p>
+                            <span className={styles.starIcon}><FaStar /></span>
+                            <span className={styles.score}>4.9 (10,092)</span>
                         </div>
                     </div>
                 </div>
@@ -106,8 +109,8 @@ function NowItem() {
                             <p className={styles.nIT3}>29,500</p>
                         </div>
                         <div className={styles.star}>
-                            <div><FaStar /></div>
-                            <p>5 (45)</p>
+                            <span className={styles.starIcon}><FaStar /></span>
+                            <span className={styles.score}>5 (45)</span>
                         </div>
                     </div>
                 </div>
@@ -123,8 +126,8 @@ function NowItem() {
                             <p className={styles.nIT3}>31,000</p>
                         </div>
                         <div className={styles.star}>
-                            <div><FaStar /></div>
-                            <p>4.9 (26,169)</p>
+                            <span className={styles.starIcon}><FaStar /></span>
+                            <span className={styles.score}>4.9 (26,169)</span>
                         </div>
                     </div>
                 </div>
@@ -140,8 +143,8 @@ function NowItem() {
                             <p className={styles.nIT3}>25,000</p>
                         </div>
                         <div className={styles.star}>
-                            <div><FaStar /></div>
-                            <p>5 (45)</p>
+                            <span className={styles.starIcon}><FaStar /></span>
+                            <span className={styles.score}>5 (45)</span>
                         </div>
                     </div>
                 </div>
@@ -157,8 +160,8 @@ function NowItem() {
                             <p className={styles.nIT3}>82,000</p>
                         </div>
                         <div className={styles.star}>
-                            <div><FaStar /></div>
-                            <p>4.9 (10,092)</p>
+                            <span className={styles.starIcon}><FaStar /></span>
+                            <span className={styles.score}>4.9 (10,092)</span>
                         </div>
                     </div>
                 </div>
@@ -172,8 +175,8 @@ function NowItem() {
                             <p className={styles.nIT1}>3,000</p>
                         </div>
                         <div className={styles.star}>
-                            <div><FaStar /></div>
-                            <p>4.9 (7,271)</p>
+                            <span className={styles.starIcon}><FaStar /></span>
+                            <span className={styles.score}>4.9 (7,271)</span>
                         </div>
                     </div>
                 </div>
