@@ -5,6 +5,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import NowItem from './nowItem';
 import styles from './home.module.css';
 import SuggestItem from './suggestItem';
+import SuggestTEST from './suggestTEST';
 
 // 작성 날짜 : 2025-01-09
 // 파일의 역할 : home
@@ -200,7 +201,8 @@ function HomeArea() {
                         </div>
                     </div>
                     <div>
-                        <SuggestItem />
+                        {/* <SuggestItem /> */}
+                        <SuggestTEST/>
                     </div>
                 </div>
             </article>

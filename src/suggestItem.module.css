@@ -1,5 +1,6 @@
 .suggest {
     display: flex;
+    overflow: hidden;
 }
 
 .suggestItem img {
@@ -20,7 +21,7 @@
 }
 
 .bold {
-    padding-right: 5px;
+    padding-right: 3px;
     font-weight: bold;
 }
 
@@ -72,4 +73,19 @@
 
 .starIcon {
     padding-right: 7px;
+}
+
+.sugbtnBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sugPrevBtn {
+    border: 0;
+    background-color: transparent;
+}
+
+.sugNextBtn {
+    border: 0;
+    background-color: transparent;
 }

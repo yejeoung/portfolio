@@ -1,0 +1,16 @@
+.suggestItem {
+    display: none;
+    /* 기본적으로 모든 슬라이드를 숨김 */
+    position: absolute;
+    opacity: 0;
+    /* 투명하게 설정 */
+    transition: opacity 0.5s ease-in-out;
+    /* 부드러운 전환 효과 */
+}
+
+.suggestItem.active {
+    display: block;
+    /* 현재 활성화된 슬라이드만 표시 */
+    opacity: 1;
+    /* 활성화된 슬라이드는 보이게 설정 */
+}
