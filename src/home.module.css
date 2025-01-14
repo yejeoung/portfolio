@@ -237,3 +237,8 @@
     width: 1280px;
     margin-bottom: 200px;
 }
+
+/* suggestItem slick css */
+.slick-next{
+    background-color: #000000;
+}

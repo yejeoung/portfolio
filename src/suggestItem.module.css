@@ -4,9 +4,12 @@
 }
 
 .suggestItem img {
-    margin-right: 20px;
     width: 240px;
     height: 320px;
+}
+
+.suggestItem {
+    width: 240px;
 }
 
 .sText {
