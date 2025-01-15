@@ -195,12 +195,19 @@
 }
 
 .bhName {
+    display: flex;
     margin-bottom: 30px;
 }
 
 .bhName1 {
+    margin-right: 10px;
     font-size: 24px;
     font-weight: bold;
+}
+
+.bhtime {
+    padding-top: 7px;
+    color: #999999;
 }
 
 .more {
@@ -235,10 +242,109 @@
 .suggest {
     margin: 0 auto;
     width: 1280px;
-    margin-bottom: 200px;
+    margin-bottom: 300px;
 }
 
 /* suggestItem slick css */
 .slick-next{
     background-color: #000000;
+}
+
+/* sns */
+.sns{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.snsFont {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.snsName {
+    font-size: 40px;
+}
+
+.snsLink {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.snsImg {
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.snsImg img {
+    width: 300px;
+    height: 300px;
+}
+
+/* Footer */
+.footer {
+    height: 458px;
+    background-color: #00bc70;
+    color: #ffffff;
+}
+
+.footerInner {
+    display: grid;
+    justify-content: center;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.fHeader {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0 60px 0;
+    width: 885px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.footerLogo {
+    margin: 0 auto;
+    height: 85px;
+}
+
+.footerLogo img {
+    width: 200px;
+    height: 28px;
+    margin-right: 10px;
+}
+
+.addressBtn {
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+
+.counsel {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+.counsel p {
+    padding-bottom: 10px;
+}
+
+.snsIcon {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin: 0 auto;
+    width: 170px;
+    height: 90px;
+}
+
+.info {
+    text-align: center;
+    font-size: 16px;
 }

@@ -129,3 +129,28 @@ p {
 .category svg {
     margin-right: 10px;
 }
+
+/* slick css */
+.slider-box {
+    width: 100%;
+}
+
+.slider-box .slick-prev:before,
+.slider-box .slick-next:before {
+    /* slick button에는 색상 투명과 투명도가 조정되어있기에
+    추가해주어야함 */
+    color: #00bc70; 
+    opacity: 1;
+    font-size: 30px;
+}
+
+.slider-box .slick-prev:before {
+    position: relative;
+    left: -25px;
+}
+
+.slider-box > div {
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+}

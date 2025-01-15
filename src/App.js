@@ -7,6 +7,7 @@ import { AiOutlineShopping } from "react-icons/ai";
 import { IoMenu } from "react-icons/io5";
 import HomeArea from './home.jsx';
 import Hotdeal from './components/Hotdeal';
+import Event from './components/Event.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -53,6 +54,7 @@ function App() {
       <div className='contents'>
         <Route path='/' exact={true} component={HomeArea}></Route>
         <Route path='/components/Hotdeal' component={Hotdeal}></Route>
+        <Route path='/components/Event' component={Event}></Route>
       </div>
     </>
   );

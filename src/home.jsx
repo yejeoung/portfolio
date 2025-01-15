@@ -1,14 +1,20 @@
-import { useState } from 'react';
+import React from 'react';
+import { useState, useEffect } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import Moment from 'react-moment';
 import { GoPlus } from "react-icons/go";
-import { IoIosArrowForward } from "react-icons/io";
-import NowItem from './nowItem';
+import { IoIosArrowForward, IoIosArrowDropdownCircle } from "react-icons/io";
+import { FaYoutube, FaInstagram, FaFacebookF } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { MdOutlineFileDownload } from "react-icons/md";
+import NowItem from './components/nowItem';
 import styles from './home.module.css';
-import SuggestItem from './suggestItem';
-// import SuggestTEST from './suggestTEST';
+import SuggestItem from './components/suggestItem';
 
 // 작성 날짜 : 2025-01-09
 // 파일의 역할 : home
+
+// yarn add moment react-moment
 
 function HomeArea() {
     const [index, setIndex] = useState(0);
@@ -16,6 +22,18 @@ function HomeArea() {
     const handleSelect = (selectedIndex) => {
         setIndex(selectedIndex);
     };
+
+    const [currentTime, setCurrentTime] = useState(new Date());
+
+    useEffect(() => {
+        // 1시간마다 시간 업데이트
+        const interval = setInterval(() => {
+            setCurrentTime(new Date());
+        }, 3600000); // 3600000ms = 1시간
+
+        // 컴포넌트 언마운트 시 interval 정리
+        return () => clearInterval(interval);
+    }, []);
 
     return (
         <>
@@ -170,7 +188,7 @@ function HomeArea() {
                     <div className={styles.bHeader}>
                         <div className={styles.bhName}>
                             <p className={styles.bhName1}>지금 제일 잘나가요</p>
-                            {/* 1시간마다 시간 바뀌는 기능 넣기 */}
+                            <Moment className={styles.bhtime} format="HH:mm">{currentTime}</Moment>
                         </div>
                         <div className={styles.more}>
                             <p>더보기</p>
@@ -193,7 +211,7 @@ function HomeArea() {
                 <div className={styles.suggest}>
                     <div className={styles.bHeader}>
                         <div className={styles.bhName}>
-                            <p className={styles.bhName1}>지금 제일 잘나가요</p>
+                            <p className={styles.bhName1}>이 제품 어때요?</p>
                         </div>
                         <div className={styles.more}>
                             <p>더보기</p>
@@ -202,7 +220,59 @@ function HomeArea() {
                     </div>
                     <div>
                         <SuggestItem />
-                        {/* <SuggestTEST/> */}
+                    </div>
+                </div>
+
+                {/* instagram */}
+                <div className={styles.sns}>
+                    <div className={styles.snsFont}>
+                        <span className={styles.snsName}>@innisfreeofficial</span>
+                        <div className={styles.snsLink}>
+                            <a href='https://www.instagram.com/innisfreeofficial/'>
+                                <span>Follow us on Instagram</span>
+                                <IoIosArrowForward />
+                            </a>
+                        </div>
+                    </div>
+                    <div className={styles.snsImg}>
+                        <img src="/images/snsImg1.png" alt="" />
+                        <img src="/images/snsImg2.jpg" alt="" />
+                        <img src="/images/snsImg3.jpg" alt="" />
+                        <img src="/images/snsImg4.jpg" alt="" />
+                    </div>
+                </div>
+            </article>
+
+            {/* Footer */}
+            <article className={styles.footer}>
+                <div className={styles.footerInner}>
+                    <div className={styles.fHeader}>
+                        <span>서비스 이용약관</span>
+                        <span className={styles.bold}>개인정보처리방침</span>
+                        <span>영상정보처리기기 운영/관리 방침</span>
+                        <span>위치기반서비스 이용약관</span>
+                        <span>공지사항</span>
+                        <span>임직원서비스</span>
+                    </div>
+                    <div className={styles.footerLogo}>
+                        <img src="/images/footerLogo.png" alt="" />
+                        <button className={styles.addressBtn}>
+                            <IoIosArrowDropdownCircle size={30} color='white' />
+                        </button>
+                    </div>
+                    <div className={styles.counsel}>
+                        <p>이니스프리 제품 고객 상담 <span className={styles.bold}>080-380-0144</span></p>
+                        <span>평일 09:00 ~ 18:00 (점심시간 12:00 ~ 13:00)</span>
+                    </div>
+                    <div className={styles.snsIcon}>
+                        <FaYoutube size={30} />
+                        <FaInstagram size={30} />
+                        <FaFacebookF size={30} />
+                        <FaXTwitter size={30} />
+                        <MdOutlineFileDownload size={30} />
+                    </div>
+                    <div className={styles.info}>
+                        <span>Copyright ⓒ 2023 innisfree. All Rights Reserved.</span>
                     </div>
                 </div>
             </article>

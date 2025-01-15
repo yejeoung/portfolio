@@ -1,51 +1,66 @@
-.nowBest {
+.suggest {
     display: flex;
-    justify-content: space-between;
+    overflow: hidden;
 }
 
-.nowBest img {
+.suggestItem img {
     width: 240px;
     height: 320px;
 }
 
-.nIText {
+.suggestItem {
+    width: 240px;
+}
+
+.sText {
     width: 240px;
     height: 180px;
 }
 
-.nIText1 {
+.sText1 {
     display: flex;
     padding: 15px 0 15px 0;
     font-size: 14px;
 }
 
 .bold {
-    padding-right: 5px;
+    padding-right: 3px;
     font-weight: bold;
 }
 
-.nIText2 {
+.sText2 {
     display: flex;
     width: 170px;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 
-.nIT1 {
+.sT1 {
     font-size: 20px;
     font-weight: bold;
 }
 
-.nIT2 {
+.sT2 {
     font-size: 20px;
     color: #ff0000;
 }
 
-.nIT3 {
+.sT3 {
     font-size: 13px;
     text-decoration: line-through;
     line-height: 30px;
     color: #bcbcbc;
 }
+
+.hashT {
+    margin-right: 10px;
+    padding: 0 8px 0 8px;
+    font-size: 10px;
+    background-color: #edfff8;
+    color: #009d5e;
+    border-radius: 100px;
+}
+
 
 .star {
     display: flex;

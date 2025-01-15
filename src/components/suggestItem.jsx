@@ -1,30 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import Slider from "react-slick";
 import { FaStar } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "./suggestItem.module.css";
 
-// 작성 날짜 : 2025-01-13
-// 파일의 역할 : 추천 제품 item
-
-// yarn add react-slick
-// yarn add slick-carousel
-
-function SuggestItem() {
-    const settings = {
-        dots: true,
-        infinite: true,
+function Responsive() {
+    var settings = {
+        infinite: false,
         speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        // prevArrow: $('#prevArrow'), //이전 화살표만 변경
-        // nextArrow: $('#nextArrow'), //다음 화살표만 변경
-    };
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrow: true //좌우버튼 추가가
+    }
     return (
-        <div className="slider-container">
+        <div className="slider-container slider-box">
             <Slider {...settings}>
-                <div>
+                <div className={styles.suggestBox}>
                     <div className={styles.suggestItem}>
                         <img src="/images/suggestImg01.png" alt="" />
                         <div className={styles.sText}>
@@ -259,4 +251,4 @@ function SuggestItem() {
     );
 }
 
-export default SuggestItem;
+export default Responsive;
