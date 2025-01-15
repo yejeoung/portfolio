@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "./suggestItem.module.css";
 
-function Responsive() {
+function SuggestItem() {
     var settings = {
         infinite: false,
         speed: 500,
@@ -251,4 +251,4 @@ function Responsive() {
     );
 }
 
-export default Responsive;
+export default SuggestItem;
