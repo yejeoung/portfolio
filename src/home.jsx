@@ -1,7 +1,8 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Moment from 'react-moment';
+import moment from 'moment';
 import { GoPlus } from "react-icons/go";
 import { IoIosArrowForward, IoIosArrowDropdownCircle } from "react-icons/io";
 import { FaYoutube, FaInstagram, FaFacebookF } from "react-icons/fa";
@@ -23,17 +24,9 @@ function HomeArea() {
         setIndex(selectedIndex);
     };
 
-    const [currentTime, setCurrentTime] = useState(new Date());
+    //간단하게 정각시간만 표기하게 끔 함
+    const onTime = moment().startOf('hour');
 
-    useEffect(() => {
-        // 1시간마다 시간 업데이트
-        const interval = setInterval(() => {
-            setCurrentTime(new Date());
-        }, 3600000); // 3600000ms = 1시간
-
-        // 컴포넌트 언마운트 시 interval 정리
-        return () => clearInterval(interval);
-    }, []);
 
     return (
         <>
@@ -188,7 +181,7 @@ function HomeArea() {
                     <div className={styles.bHeader}>
                         <div className={styles.bhName}>
                             <p className={styles.bhName1}>지금 제일 잘나가요</p>
-                            <Moment className={styles.bhtime} format="HH:mm">{currentTime}</Moment>
+                            <Moment className={styles.bhtime} format='HH:mm'>{onTime}</Moment>
                         </div>
                         <div className={styles.more}>
                             <p>더보기</p>
