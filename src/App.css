@@ -43,8 +43,15 @@ p {
     text-align: right;
 }
 
-.language span {
-    margin: 0 10px 0 10px;
+.language button {
+    margin-left: 5px;
+    background-color: transparent;
+    border: none;
+    color: #bcbcbc;
+}
+
+.clicked {
+    color: #000000;
 }
 
 .h_top {
@@ -124,6 +131,9 @@ p {
 
 .category {
     display: flex;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
 }
 
 .category svg {

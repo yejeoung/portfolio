@@ -21,13 +21,35 @@ import './App.css';
 // 작성 날짜 : 2024-12-30
 // 파일의 역할 : 링크 연결, header
 
+const langs = document.getElementsByClassName("langs");
+
+function langsClick(e) {
+  if (e.target.classList[1] === "clicked") {
+    e.target.classList.remove("clicked");
+  } else {
+    for (let i = 0; i < langs.length; i++) {
+      langs[i].classList.remove("clicked");
+    }
+
+    e.target.classList.add("clicked");
+  }
+}
+
+function init() {
+  for (var i = 0; i < langs.length; i++) {
+    langs[i].addEventListener("click", langsClick);
+  }
+}
+
+init();
+
 function App() {
   return (
     <>
       <header className='header'>
         <div className='language'>
-          <span className='kor'>KOR</span>
-          <span className='eng'>ENG</span>
+          <button className='langs'>KOR</button>
+          <button className='langs'>ENG</button>
         </div>
         <div className='h_top'>
           <h1 className='logo'><Link to='/'><img src='/images/logo.png' alt=''></img></Link></h1>
@@ -40,7 +62,7 @@ function App() {
         </div>
       </header >
       <div className='nav'>
-        <div className='category'><IoMenu size={24} />카테고리</div>
+        <button className='category' ><IoMenu size={24} />카테고리</button>
         <ul>
           <li><Link to='/components/live'>라이브</Link></li>
           <li><Link to='/components/Hotdeal'>특가</Link></li>

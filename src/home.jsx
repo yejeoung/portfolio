@@ -3,14 +3,16 @@ import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Moment from 'react-moment';
 import moment from 'moment';
+// react icons
 import { GoPlus } from "react-icons/go";
 import { IoIosArrowForward, IoIosArrowDropdownCircle } from "react-icons/io";
 import { FaYoutube, FaInstagram, FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdOutlineFileDownload } from "react-icons/md";
-import NowItem from './mainData/nowItem';
+// route
+import NowItem from './main/nowItem';
 import styles from './home.module.css';
-import SuggestItem from './mainData/suggestItem';
+import SuggestItem from './main/suggestItem';
 
 // 작성 날짜 : 2025-01-09
 // 파일의 역할 : home
