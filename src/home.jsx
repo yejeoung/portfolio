@@ -8,9 +8,9 @@ import { IoIosArrowForward, IoIosArrowDropdownCircle } from "react-icons/io";
 import { FaYoutube, FaInstagram, FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdOutlineFileDownload } from "react-icons/md";
-import NowItem from './components/nowItem';
+import NowItem from './mainData/nowItem';
 import styles from './home.module.css';
-import SuggestItem from './components/suggestItem';
+import SuggestItem from './mainData/suggestItem';
 
 // 작성 날짜 : 2025-01-09
 // 파일의 역할 : home
@@ -24,7 +24,7 @@ function HomeArea() {
         setIndex(selectedIndex);
     };
 
-    //간단하게 정각시간만 표기하게 끔 함
+    //간단하게 정각 시간만 표기하게 끔 함, 어차피 시간은 계속 흐르니까 알아서 바뀜
     const onTime = moment().startOf('hour');
 
 
