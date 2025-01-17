@@ -6,7 +6,7 @@ import './App.css';
 // react icons
 import { GoPerson } from "react-icons/go";
 import { AiOutlineShopping } from "react-icons/ai";
-// import { IoSearch } from "react-icons/io5"; search아이콘
+import { IoSearch } from "react-icons/io5";
 // Route
 import HomeArea from './home.jsx';
 import Hotdeal from './components/Hotdeal';
@@ -33,8 +33,11 @@ function App() {
         <div className='language'><Langs /></div>
         <div className='h_top'>
           <h1 className='logo'><Link to='/'><img src='/images/logo.png' alt=''></img></Link></h1>
-          <input className='search' type='text'></input>
-          <ul>
+          <div className='serach'>
+            <input className='searchInput' type='text' placeholder='검색어를 입력해주세요.'></input>
+            <button type='submit'><IoSearch size={24}/></button>
+          </div>
+          <ul className='info'>
             <li className='LoginIcon'><Link to='/components/Login'><RiLoginBoxLine />로그인</Link></li>
             <li><Link to='/components/MyPage'><GoPerson />마이페이지</Link></li>
             <li><Link to='/components/Cart'><AiOutlineShopping />장바구니</Link></li>

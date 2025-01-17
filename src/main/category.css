@@ -3,7 +3,7 @@
 }
 
 .accordion-header {
-    width: 148px;
+    width: 130px;
 }
 
 .accordion-body {
@@ -11,8 +11,14 @@
 }
 
 .accordion-button {
+    padding: 0;
+    width: 130px;
     height: 30px;
-    background-color: transparent;
+    font-weight: bold;
+}
+
+.accordion-button::after {
+    margin-left: 15px;
 }
 
 .ctgheader {
