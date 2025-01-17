@@ -5,13 +5,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "./suggestItem.module.css";
 
+// 파일의 역할 : 추천 제품 리스트트
+
 function SuggestItem() {
     var settings = {
         infinite: false,
         speed: 500,
         slidesToShow: 5,
         slidesToScroll: 1,
-        arrow: true //좌우버튼 추가가
+        arrow: true //좌우버튼 추가
     }
     return (
         <div className="slider-container slider-box">

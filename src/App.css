@@ -21,7 +21,7 @@
     left: -100px;
 }
 
-a {
+a, link {
     text-decoration: none;
     color: inherit;
 }
@@ -39,18 +39,21 @@ p {
 }
 
 .language {
+    display: flex;
+    justify-content: right;
     margin-top: 5px;
     text-align: right;
+    cursor: pointer;
 }
 
-.language button {
-    margin-left: 5px;
-    background-color: transparent;
-    border: none;
-    color: #bcbcbc;
+.langs {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #cdcdcd;
 }
 
 .clicked {
+    font-weight: bold;
     color: #000000;
 }
 
@@ -123,21 +126,14 @@ p {
     font-weight: bold;
 }
 
-.nav li {
+.navList li {
     display: inline-block;
     margin: 0 10px 0 10px;
     list-style: none;
 }
 
 .category {
-    display: flex;
-    background-color: transparent;
-    border: none;
-    font-weight: bold;
-}
-
-.category svg {
-    margin-right: 10px;
+    z-index: 9999;
 }
 
 /* slick css */

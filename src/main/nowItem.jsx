@@ -3,7 +3,7 @@ import { FaStar } from "react-icons/fa";
 import styles from "./nowItem.module.css";
 
 // 작성 날짜 : 2025-01-13
-// 파일의 역할 : 지금 제일 잘 나가는 제품 item
+// 파일의 역할 : 지금 제일 잘 나가는 제품 리스트
 
 function NowItem() {
     return (
