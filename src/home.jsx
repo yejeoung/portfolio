@@ -5,7 +5,7 @@ import Moment from 'react-moment';
 import moment from 'moment';
 // react icons
 import { GoPlus } from "react-icons/go";
-import { IoIosArrowForward, IoIosArrowDropdownCircle } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 import { FaYoutube, FaInstagram, FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdOutlineFileDownload } from "react-icons/md";
@@ -13,6 +13,7 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import NowItem from './main/nowItem';
 import styles from './home.module.css';
 import SuggestItem from './main/suggestItem';
+import AddressBtn from './main/addressBtn';
 
 // 작성 날짜 : 2025-01-09
 // 파일의 역할 : home
@@ -249,11 +250,8 @@ function HomeArea() {
                         <span>공지사항</span>
                         <span>임직원서비스</span>
                     </div>
-                    <div className={styles.footerLogo}>
-                        <img src="/images/footerLogo.png" alt="" />
-                        <button className={styles.addressBtn}>
-                            <IoIosArrowDropdownCircle size={30} color='white' />
-                        </button>
+                    <div>
+                        <AddressBtn/>
                     </div>
                     <div className={styles.counsel}>
                         <p>이니스프리 제품 고객 상담 <span className={styles.bold}>080-380-0144</span></p>

@@ -1,0 +1,26 @@
+.footerLogo {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    height: 40px;
+}
+
+.footerLogo img {
+    width: 200px;
+    height: 28px;
+    margin-right: 10px;
+}
+
+.address {
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+    height: 130px;
+}
+
+.addressBtn {
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+}
