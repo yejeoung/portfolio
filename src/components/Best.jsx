@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import './Best.css';
 
 function Best(){
@@ -6,9 +7,9 @@ function Best(){
         <div className="bestCnt">
             <p>베스트</p>
             <ul>
-                <li>실시간 베스트</li>
-                <li>주간 베스트</li>
-                <li>월간 베스트</li>
+                <li><Link to='./best/nowBest'>실시간 베스트</Link></li>
+                <li><Link to='./best/weekBest'>주간 베스트</Link></li>
+                <li><Link to='./best/monthBest'>월간 베스트</Link></li>
             </ul>
         </div>
     );
