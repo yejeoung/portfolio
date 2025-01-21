@@ -1,9 +1,8 @@
 import React from "react";
 
 function Hotdeal() {
-    return(
+    return (
         <>
-        
         </>
     );
 }

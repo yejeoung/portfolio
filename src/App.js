@@ -62,7 +62,7 @@ function App() {
         <Route path='/' exact={true} component={HomeArea}></Route>
         <Route path='/components/Hotdeal' component={Hotdeal}></Route>
         <Route path='/components/Event' component={Event}></Route>
-        <Route path='./components/Best' component={Best}></Route>
+        <Route path='/components/Best' component={Best}></Route>
       </div>
     </>
   );

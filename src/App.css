@@ -21,7 +21,8 @@
     left: -100px;
 }
 
-a, link {
+a,
+link {
     text-decoration: none;
     color: inherit;
 }
@@ -173,7 +174,7 @@ p {
 .slider-box .slick-next:before {
     /* slick button에는 색상 투명과 투명도가 조정되어있기에
     추가해주어야함 */
-    color: #00bc70; 
+    color: #00bc70;
     opacity: 1;
     font-size: 30px;
 }
@@ -183,8 +184,12 @@ p {
     left: -25px;
 }
 
-.slider-box > div {
+.slider-box>div {
     justify-content: center;
     width: 100%;
     height: 350px;
+}
+
+.contents {
+    border-top: 1px solid #cdcdcd;
 }

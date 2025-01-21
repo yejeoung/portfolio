@@ -1,0 +1,10 @@
+.bestCnt {
+    margin: 0 auto;
+    width: 1280px;
+}
+
+.bestCnt p {
+    margin: 60px auto 30px;
+    font-size: 38px;
+    font-weight: 300;
+}
