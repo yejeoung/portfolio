@@ -137,6 +137,7 @@ p {
 }
 
 .nav {
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding-top: 32px;
@@ -151,9 +152,10 @@ p {
 .navList {
     display: flex;
     justify-content: space-between;
-    padding: 0 20ypx 0 0;
+    padding: 0;
     margin: 0 auto;
     width: 430px;
+
 }
 
 .navList li {
@@ -162,6 +164,7 @@ p {
 }
 
 .category {
+    position: absolute;
     z-index: 9999;
 }
 

@@ -15,6 +15,7 @@ import Best from './components/Best.jsx';
 import Langs from './langs.jsx';
 import Category from './main/category.jsx';
 // css
+import { Provider } from './data/context.js';
 
 // yarn add react-router-dom@5
 // yarn add react-scripts
@@ -28,7 +29,7 @@ import Category from './main/category.jsx';
 
 function App() {
   return (
-    <>
+    <Provider>
       <header className='header'>
         <div className='language'><Langs /></div>
         <div className='h_top'>
@@ -64,7 +65,7 @@ function App() {
         <Route path='/components/Event' component={Event}></Route>
         <Route path='/components/Best' component={Best}></Route>
       </div>
-    </>
+    </Provider>
   );
 }
 
