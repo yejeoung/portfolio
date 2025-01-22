@@ -1,0 +1,232 @@
+let weekAllBest = [
+    {
+        id: 1,
+        src: require('/images/weekAllBest/weekAllBest01.png'),
+        best: 'BEST',
+        name: '레티놀 그린티 PDRN 앰플 40mL+레티놀 PDRN 토너 170mL',
+        pri1: '59,040',
+        sale: '28%',
+        pri2: '82,000',
+        icon: '★',
+        star: '4.9 (11,246)'
+    },
+    {
+        id: 2,
+        src: require('/images/weekAllBest/weekAllBest02.jpg'),
+        best: 'BEST',
+        name: '에너지 마스크',
+        pri1: '1,400',
+        sale: '30%',
+        pri2: '2,000',
+        icon: '★',
+        star: '4.9 (54,645)'
+    },
+    {
+        id: 3,
+        src: require('/images/weekAllBest/weekAllBest03.jpg'),
+        best: 'BEST',
+        name: '[마이멜로디 에디션] 그린티 수분 세럼 80mL+그린티 수분크림50mL',
+        pri1: '40,600',
+        sale: '30%',
+        pri2: '58,000',
+        free: '증정',
+        icon: '★',
+        star: '4.9 (26,683)'
+    },
+    {
+        id: 4,
+        src: require('/images/weekAllBest/weekAllBest04.png'),
+        best: 'BEST',
+        name: '그린티 히알루론산 수분크림 80mL 더블기획 [튜브]',
+        pri1: '53,200',
+        sale: '30%',
+        pri2: '76,000',
+        free: '증정',
+        icon: '★',
+        star: '4.9 (18,882)'
+    },
+    {
+        id: 5,
+        src: require('/images/weekAllBest/weekAllBest05.png'),
+        best: 'BEST',
+        name: '[장원영 pick] [대용량 40mL] 레타놀 PDRN 앰플',
+        pri1: '42,750',
+        sale: '25%',
+        pri2: '57,000',
+        free: '증정',
+        icon: '★',
+        star: '4.9 (11,243)'
+    },
+    {
+        id: 6,
+        src: require('/images/weekAllBest/weekAllBest06.jpg'),
+        best: 'BEST',
+        name: '액티브 마스크',
+        pri1: '30,000',
+        icon: '★',
+        star: '4.8 (23,322)'
+    },
+    {
+        id: 7,
+        src: require('/images/weekAllBest/weekAllBest07.png'),
+        best: 'BEST',
+        name: '콜라겐 그린티 세라마이드 탄력장벽크림 50mL + 리필',
+        pri1: '43,550',
+        sale: '35%',
+        pri2: '67,000',
+        free: '증정',
+        icon: '★',
+        star: '4.9 (18,374)'
+    },
+    {
+        id: 8,
+        src: require('/images/weekAllBest/weekAllBest08.jpg'),
+        best: 'BEST',
+        name: '레티놀 그린티 PDRN 스킨부스터 토너',
+        pri1: '17,500',
+        sale: '30%',
+        pri2: '25,000',
+        icon: '★',
+        star: '4.9 (822)'
+    },
+    {
+        id: 9,
+        src: require('/images/weekAllBest/weekAllBest09.jpg'),
+        best: 'BEST',
+        name: '포레스트 포맨 올인원 에센스 / 남자피부관리 남자스킨로션 민감성',
+        pri1: '23,200',
+        sale: '20%',
+        pri2: '29,000',
+        icon: '★',
+        star: '4.9 (5,139)'
+    },
+    {
+        id: 10,
+        src: require('/images/weekAllBest/weekAllBest10.jpg'),
+        best: 'BEST',
+        name: '블랙티 유스 인핸싱 앰플 [대용량] x 2개 패키지',
+        pri1: '76,700',
+        sale: '35%',
+        pri2: '118,000',
+        free: '증정',
+        icon: '★',
+        star: '4.9 (56,393)'
+    },
+    {
+        id: 11,
+        src: require('/images/weekAllBest/weekAllBest11.jpg'),
+        best: 'BEST',
+        name: '블랙티 유스 인핸싱 앰플 마스크',
+        pri1: '3,500',
+        sale: '30%',
+        pri2: '5,000',
+        icon: '★',
+        star: '4.9 (7,885)'
+    },
+    {
+        id: 12,
+        src: require('/images/weekAllBest/weekAllBest12.jpg'),
+        best: 'BEST',
+        name: '레티놀 시카 흔적 장벽크림 기획세트 (50mL+30mL)',
+        pri1: '24,500',
+        sale: '30%',
+        pri2: '35,000',
+        icon: '★',
+        star: '4.8 (13,761)'
+    },
+    {
+        id: 13,
+        src: require('/images/weekAllBest/weekAllBest13.jpg'),
+        best: 'BEST',
+        name: '레티놀 시카 흔적 앰플 기획세트 (30mL+15mL)',
+        pri1: '30,000',
+        sale: '25%',
+        pri2: '40,000',
+        icon: '★',
+        star: '4.8 (54,187)'
+    },
+    {
+        id: 14,
+        src: require('/images/weekAllBest/weekAllBest14.jpg'),
+        best: 'BEST',
+        name: '[폼폼푸린 에디션]폼폼푸린 유채꿀립밤',
+        pri1: '7,000',
+        sale: '30%',
+        pri2: '10,000',
+        icon: '★',
+        star: '4.8 (7,642)'
+    },
+    {
+        id: 15,
+        src: require('/images/weekAllBest/weekAllBest15.png'),
+        best: 'BEST',
+        name: '레티놀 그린티 PDRN 앰플 25mL+레티놀 PDRN 토너 170mL',
+        pri1: '46,800',
+        sale: '28%',
+        pri2: '65,000',
+        free: '증정',
+        icon: '★',
+        star: '4.9 (11,246)'
+    },
+    {
+        id: 16,
+        src: require('/images/weekAllBest/weekAllBest16.jpg'),
+        best: 'BEST',
+        name: '레티놀 시카 앰플 [대용량] x 2개 패키지',
+        pri1: '79,800',
+        sale: '30%',
+        pri2: '114,000',
+        free: '증정',
+        icon: '★',
+        star: '4.8 (54,187)'
+    },
+    {
+        id: 17,
+        src: require('/images/weekAllBest/weekAllBest17.png'),
+        best: 'BEST',
+        name: '그린티 히알루론산 수분크림 / 저자극 진정 끈적이지않는 수분크림',
+        pri1: '20,250',
+        sale: '25%',
+        pri2: '27,000',
+        free: '증정',
+        icon: '★',
+        star: '4.9 (18,887)'
+    },
+    {
+        id: 18,
+        src: require('/images/weekAllBest/weekAllBest18.png'),
+        best: 'BEST',
+        name: '그린티 씨드 세럼130mL + 그린티 수분크림80mL',
+        pri1: '58,100',
+        sale: '30%',
+        pri2: '83,000',
+        free: '증정',
+        icon: '★',
+        star: '4.9 (18,887)'
+    },
+    {
+        id: 19,
+        src: require('/images/weekAllBest/weekAllBest19.jpg'),
+        best: 'BEST',
+        name: '한란 인리치드 크림',
+        pri1: '22,500',
+        sale: '25%',
+        pri2: '30,000',
+        icon: '★',
+        star: '4.8 (11,292)'
+    },
+    {
+        id: 20,
+        src: require('/images/weekAllBest/weekAllBest20.jpg'),
+        best: 'BEST',
+        name: '레티놀 시카 흔적 앰플 [대용량]',
+        pri1: '42,750',
+        sale: '25%',
+        pri2: '57,000',
+        free: '증정',
+        icon: '★',
+        star: '4.8 (54,187)'
+    }
+]
+
+export default weekAllBest;
