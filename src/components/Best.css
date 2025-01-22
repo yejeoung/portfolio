@@ -78,3 +78,14 @@
 .bestTime {
     color: #999e9c;
 }
+
+/* 제품 데이터 */
+.wrapInner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1280px;
+}
+
+.itemList{
+    width: 240px;
+}

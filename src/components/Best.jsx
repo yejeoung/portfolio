@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import Moment from 'react-moment';
 import moment from 'moment';
@@ -13,7 +13,7 @@ function Best() {
         nowAllData: [
             {
                 id: 1,
-                src: '/images/nowAllBest/nowAllBest01.jpg',
+                path: (process.env.PUBLIC_URL +'/images/nowAllBest/nowAllBest01.jpg'),
                 best: 'BEST',
                 name: '애플씨드 클렌징 오일',
                 pri1: '10,500',
@@ -24,7 +24,7 @@ function Best() {
             },
             {
                 id: 2,
-                src: '/images/nowAllBest/nowAllBest02.jpg',
+                path: '/images/nowAllBest/nowAllBest02.jpg',
                 best: 'BEST',
                 name: '레티놀 PDRN 토너 170mL+앰플 25mL+그린티 수분크림 50mL',
                 pri1: '64,400',
@@ -36,7 +36,7 @@ function Best() {
             },
             {
                 id: 3,
-                src: '/images/nowAllBest/nowAllBest03.png',
+                path: '/images/nowAllBest/nowAllBest03.png',
                 best: 'BEST',
                 name: '[장원영 pick] [대용량 40mL] 레타놀 PDRN 앰플',
                 pri1: '42,750',
@@ -48,7 +48,7 @@ function Best() {
             },
             {
                 id: 4,
-                src: '/images/nowAllBest/nowAllBest04.png',
+                path: '/images/nowAllBest/nowAllBest04.png',
                 best: 'BEST',
                 name: '그린티 히알루론산 수분크림 80mL 더블기획 [튜브]',
                 pri1: '53,200',
@@ -60,7 +60,7 @@ function Best() {
             },
             {
                 id: 5,
-                src: '/images/nowAllBest/nowAllBest05.jpg',
+                path: '/images/nowAllBest/nowAllBest05.jpg',
                 best: 'BEST',
                 name: '올리브 비타민 E 리얼 폼 클렌징',
                 pri1: '7,000',
@@ -71,7 +71,7 @@ function Best() {
             },
             {
                 id: 6,
-                src: '/images/nowAllBest/nowAllBest06.png',
+                path: '/images/nowAllBest/nowAllBest06.png',
                 best: 'BEST',
                 name: '[2개패키지] 대용량 비타C 잡티토닝세럼',
                 pri1: '78,400',
@@ -83,7 +83,7 @@ function Best() {
             },
             {
                 id: 7,
-                src: '/images/nowAllBest/nowAllBest07.png',
+                path: '/images/nowAllBest/nowAllBest07.png',
                 best: 'BEST',
                 name: '블랙티 유스 앰플[대용량] 50mL + 블랙티 크림 50mL',
                 pri1: '61,750',
@@ -95,7 +95,7 @@ function Best() {
             },
             {
                 id: 8,
-                src: '/images/nowAllBest/nowAllBest08.png',
+                path: '/images/nowAllBest/nowAllBest08.png',
                 best: 'BEST',
                 name: '그린티 수분세럼 130mL + 그린티 수분크림 80mL 패키지',
                 pri1: '58,100',
@@ -107,7 +107,7 @@ function Best() {
             },
             {
                 id: 9,
-                src: '/images/nowAllBest/nowAllBest09.jpg',
+                path: '/images/nowAllBest/nowAllBest09.jpg',
                 best: 'BEST',
                 name: '올리브 비타민 E 리얼 클렌징 티슈',
                 pri1: '4,500',
@@ -118,7 +118,7 @@ function Best() {
             },
             {
                 id: 10,
-                src: '/images/nowAllBest/nowAllBest10.png',
+                path: '/images/nowAllBest/nowAllBest10.png',
                 best: 'BEST',
                 name: '콜라겐 그린티 세라마이드 탄력장벽크림 50mL + 리필',
                 pri1: '43,550',
@@ -130,7 +130,7 @@ function Best() {
             },
             {
                 id: 11,
-                src: '/images/nowAllBest/nowAllBest11.jpg',
+                path: '/images/nowAllBest/nowAllBest11.jpg',
                 best: 'BEST',
                 name: '포레스트 포맨 올인원 에센스 / 남자피부관리 남자스킨로션 민감성',
                 pri1: '23,200',
@@ -141,7 +141,7 @@ function Best() {
             },
             {
                 id: 12,
-                src: '/images/nowAllBest/nowAllBest12.jpg',
+                path: '/images/nowAllBest/nowAllBest12.jpg',
                 best: 'BEST',
                 name: '링클 사이언스 스팟 트리트먼트',
                 pri1: '37,400',
@@ -150,7 +150,7 @@ function Best() {
             },
             {
                 id: 13,
-                src: '/images/nowAllBest/nowAllBest13.png',
+                path: '/images/nowAllBest/nowAllBest13.png',
                 best: 'BEST',
                 name: '그린티 씨드 히알루론산 세럼 130mL 더블기획세트',
                 pri1: '64,800',
@@ -162,7 +162,7 @@ function Best() {
             },
             {
                 id: 14,
-                src: '/images/nowAllBest/nowAllBest14.jpg',
+                path: '/images/nowAllBest/nowAllBest14.jpg',
                 best: 'BEST',
                 name: '레티놀 PDRN 앰플 25mL x 3개',
                 pri1: '90,000',
@@ -174,7 +174,7 @@ function Best() {
             },
             {
                 id: 15,
-                src: '/images/nowAllBest/nowAllBest15.jpg',
+                path: '/images/nowAllBest/nowAllBest15.jpg',
                 best: 'BEST',
                 name: '그린티 히알루론산 스킨케어 2종 세트 / 스킨 로션 수분 저자극 닦토',
                 pri1: '28,000',
@@ -185,7 +185,7 @@ function Best() {
             },
             {
                 id: 16,
-                src: '/images/nowAllBest/nowAllBest16.jpg',
+                path: '/images/nowAllBest/nowAllBest16.jpg',
                 best: 'BEST',
                 name: '그린티 히알루론산 스킨',
                 pri1: '13,300',
@@ -197,7 +197,7 @@ function Best() {
             },
             {
                 id: 17,
-                src: '/images/nowAllBest/nowAllBest17.jpg',
+                path: '/images/nowAllBest/nowAllBest17.jpg',
                 best: 'BEST',
                 name: '화산송이 바하 모공 클렌징 오일 / 블랙헤드 피지제거 피지관리 민감성',
                 pri1: '14,000',
@@ -208,7 +208,7 @@ function Best() {
             },
             {
                 id: 18,
-                src: '/images/nowAllBest/nowAllBest18.png',
+                path: '/images/nowAllBest/nowAllBest18.png',
                 best: 'BEST',
                 name: '블랙티 유스 인핸싱 트리트먼트 에센스',
                 pri1: '31,500',
@@ -219,7 +219,7 @@ function Best() {
             },
             {
                 id: 19,
-                src: '/images/nowAllBest/nowAllBest19.jpg',
+                path: '/images/nowAllBest/nowAllBest19.jpg',
                 best: 'BEST',
                 name: '에너지 마스크',
                 pri1: '1,400',
@@ -230,7 +230,7 @@ function Best() {
             },
             {
                 id: 20,
-                src: '/images/nowAllBest/nowAllBest20.jpg',
+                path: '/images/nowAllBest/nowAllBest20.jpg',
                 best: 'BEST',
                 name: '블랙티 유스 앰플[대용량] 50mL + 블랙티 오일 30mL',
                 pri1: '64,350',
@@ -244,7 +244,7 @@ function Best() {
         weekAllData: [
             {
                 id: 1,
-                src: '/images/weekAllBest/weekAllBest01.png',
+                path: '/images/weekAllBest/weekAllBest01.png',
                 best: 'BEST',
                 name: '레티놀 그린티 PDRN 앰플 40mL+레티놀 PDRN 토너 170mL',
                 pri1: '59,040',
@@ -255,7 +255,7 @@ function Best() {
             },
             {
                 id: 2,
-                src: '/images/weekAllBest/weekAllBest02.jpg',
+                path: '/images/weekAllBest/weekAllBest02.jpg',
                 best: 'BEST',
                 name: '에너지 마스크',
                 pri1: '1,400',
@@ -266,7 +266,7 @@ function Best() {
             },
             {
                 id: 3,
-                src: '/images/weekAllBest/weekAllBest03.jpg',
+                path: '/images/weekAllBest/weekAllBest03.jpg',
                 best: 'BEST',
                 name: '[마이멜로디 에디션] 그린티 수분 세럼 80mL+그린티 수분크림50mL',
                 pri1: '40,600',
@@ -278,7 +278,7 @@ function Best() {
             },
             {
                 id: 4,
-                src: '/images/weekAllBest/weekAllBest04.png',
+                path: '/images/weekAllBest/weekAllBest04.png',
                 best: 'BEST',
                 name: '그린티 히알루론산 수분크림 80mL 더블기획 [튜브]',
                 pri1: '53,200',
@@ -290,7 +290,7 @@ function Best() {
             },
             {
                 id: 5,
-                src: '/images/weekAllBest/weekAllBest05.png',
+                path: '/images/weekAllBest/weekAllBest05.png',
                 best: 'BEST',
                 name: '[장원영 pick] [대용량 40mL] 레타놀 PDRN 앰플',
                 pri1: '42,750',
@@ -302,7 +302,7 @@ function Best() {
             },
             {
                 id: 6,
-                src: '/images/weekAllBest/weekAllBest06.jpg',
+                path: '/images/weekAllBest/weekAllBest06.jpg',
                 best: 'BEST',
                 name: '액티브 마스크',
                 pri1: '30,000',
@@ -311,7 +311,7 @@ function Best() {
             },
             {
                 id: 7,
-                src: '/images/weekAllBest/weekAllBest07.png',
+                path: '/images/weekAllBest/weekAllBest07.png',
                 best: 'BEST',
                 name: '콜라겐 그린티 세라마이드 탄력장벽크림 50mL + 리필',
                 pri1: '43,550',
@@ -323,7 +323,7 @@ function Best() {
             },
             {
                 id: 8,
-                src: '/images/weekAllBest/weekAllBest08.jpg',
+                path: '/images/weekAllBest/weekAllBest08.jpg',
                 best: 'BEST',
                 name: '레티놀 그린티 PDRN 스킨부스터 토너',
                 pri1: '17,500',
@@ -334,7 +334,7 @@ function Best() {
             },
             {
                 id: 9,
-                src: '/images/weekAllBest/weekAllBest09.jpg',
+                path: '/images/weekAllBest/weekAllBest09.jpg',
                 best: 'BEST',
                 name: '포레스트 포맨 올인원 에센스 / 남자피부관리 남자스킨로션 민감성',
                 pri1: '23,200',
@@ -345,7 +345,7 @@ function Best() {
             },
             {
                 id: 10,
-                src: '/images/weekAllBest/weekAllBest10.jpg',
+                path: '/images/weekAllBest/weekAllBest10.jpg',
                 best: 'BEST',
                 name: '블랙티 유스 인핸싱 앰플 [대용량] x 2개 패키지',
                 pri1: '76,700',
@@ -357,7 +357,7 @@ function Best() {
             },
             {
                 id: 11,
-                src: '/images/weekAllBest/weekAllBest11.jpg',
+                path: '/images/weekAllBest/weekAllBest11.jpg',
                 best: 'BEST',
                 name: '블랙티 유스 인핸싱 앰플 마스크',
                 pri1: '3,500',
@@ -368,7 +368,7 @@ function Best() {
             },
             {
                 id: 12,
-                src: '/images/weekAllBest/weekAllBest12.jpg',
+                path: '/images/weekAllBest/weekAllBest12.jpg',
                 best: 'BEST',
                 name: '레티놀 시카 흔적 장벽크림 기획세트 (50mL+30mL)',
                 pri1: '24,500',
@@ -379,7 +379,7 @@ function Best() {
             },
             {
                 id: 13,
-                src: '/images/weekAllBest/weekAllBest13.jpg',
+                path: '/images/weekAllBest/weekAllBest13.jpg',
                 best: 'BEST',
                 name: '레티놀 시카 흔적 앰플 기획세트 (30mL+15mL)',
                 pri1: '30,000',
@@ -390,7 +390,7 @@ function Best() {
             },
             {
                 id: 14,
-                src: '/images/weekAllBest/weekAllBest14.jpg',
+                path: '/images/weekAllBest/weekAllBest14.jpg',
                 best: 'BEST',
                 name: '[폼폼푸린 에디션]폼폼푸린 유채꿀립밤',
                 pri1: '7,000',
@@ -401,7 +401,7 @@ function Best() {
             },
             {
                 id: 15,
-                src: '/images/weekAllBest/weekAllBest15.png',
+                path: '/images/weekAllBest/weekAllBest15.png',
                 best: 'BEST',
                 name: '레티놀 그린티 PDRN 앰플 25mL+레티놀 PDRN 토너 170mL',
                 pri1: '46,800',
@@ -413,7 +413,7 @@ function Best() {
             },
             {
                 id: 16,
-                src: '/images/weekAllBest/weekAllBest16.jpg',
+                path: '/images/weekAllBest/weekAllBest16.jpg',
                 best: 'BEST',
                 name: '레티놀 시카 앰플 [대용량] x 2개 패키지',
                 pri1: '79,800',
@@ -425,7 +425,7 @@ function Best() {
             },
             {
                 id: 17,
-                src: '/images/weekAllBest/weekAllBest17.png',
+                path: '/images/weekAllBest/weekAllBest17.png',
                 best: 'BEST',
                 name: '그린티 히알루론산 수분크림 / 저자극 진정 끈적이지않는 수분크림',
                 pri1: '20,250',
@@ -437,7 +437,7 @@ function Best() {
             },
             {
                 id: 18,
-                src: '/images/weekAllBest/weekAllBest18.png',
+                path: '/images/weekAllBest/weekAllBest18.png',
                 best: 'BEST',
                 name: '그린티 씨드 세럼130mL + 그린티 수분크림80mL',
                 pri1: '58,100',
@@ -449,7 +449,7 @@ function Best() {
             },
             {
                 id: 19,
-                src: '/images/weekAllBest/weekAllBest19.jpg',
+                path: '/images/weekAllBest/weekAllBest19.jpg',
                 best: 'BEST',
                 name: '한란 인리치드 크림',
                 pri1: '22,500',
@@ -460,7 +460,7 @@ function Best() {
             },
             {
                 id: 20,
-                src: '/images/weekAllBest/weekAllBest20.jpg',
+                path: '/images/weekAllBest/weekAllBest20.jpg',
                 best: 'BEST',
                 name: '레티놀 시카 흔적 앰플 [대용량]',
                 pri1: '42,750',
@@ -474,7 +474,7 @@ function Best() {
         monthAllData: [
             {
                 id: 1,
-                src: '/images/monthAllBest/monthAllBest01.png',
+                path: '/images/monthAllBest/monthAllBest01.png',
                 best: 'BEST',
                 name: '그린티 히알루론산 수분크림 80mL 더블기획 [튜브]',
                 pri1: '53,200',
@@ -486,7 +486,7 @@ function Best() {
             },
             {
                 id: 2,
-                src: '/images/monthAllBest/monthAllBest02.jpg',
+                path: '/images/monthAllBest/monthAllBest02.jpg',
                 best: 'BEST',
                 name: '화산송이 바하 모공 폼 클렌징 / 피지관리 지성 민감성 피지제거 딥클렌징',
                 pri1: '9,750',
@@ -497,7 +497,7 @@ function Best() {
             },
             {
                 id: 3,
-                src: '/images/monthAllBest/monthAllBest03.jpg',
+                path: '/images/monthAllBest/monthAllBest03.jpg',
                 best: 'BEST',
                 name: '히알루론산 수분 선크림 SPF50+ PA++++ / 히알루론산 유기자차',
                 pri1: '21,000',
@@ -508,7 +508,7 @@ function Best() {
             },
             {
                 id: 4,
-                src: '/images/monthAllBest/monthAllBest04.jpg',
+                path: '/images/monthAllBest/monthAllBest04.jpg',
                 best: 'BEST',
                 name: '듀이 틴트 립밤',
                 pri1: '14,400',
@@ -519,7 +519,7 @@ function Best() {
             },
             {
                 id: 5,
-                src: '/images/monthAllBest/monthAllBest05.jpg',
+                path: '/images/monthAllBest/monthAllBest05.jpg',
                 best: 'BEST',
                 name: '그린티 아미노 수분 폼 클렌징',
                 pri1: '9,750',
@@ -530,7 +530,7 @@ function Best() {
             },
             {
                 id: 6,
-                src: '/images/monthAllBest/monthAllBest06.png',
+                path: '/images/monthAllBest/monthAllBest06.png',
                 best: 'BEST',
                 name: '콜라겐 그린티 세라마이드 탄력장벽크림 50mL + 리필',
                 pri1: '43,550',
@@ -542,7 +542,7 @@ function Best() {
             },
             {
                 id: 7,
-                src: '/images/monthAllBest/monthAllBest07.jpg',
+                path: '/images/monthAllBest/monthAllBest07.jpg',
                 best: 'BEST',
                 name: '유채꿀립밤 [초보습]',
                 pri1: '7,000',
@@ -553,7 +553,7 @@ function Best() {
             },
             {
                 id: 8,
-                src: '/images/monthAllBest/monthAllBest08.jpg',
+                path: '/images/monthAllBest/monthAllBest08.jpg',
                 best: 'BEST',
                 name: '에너지 마스크',
                 pri1: '1,400',
@@ -564,7 +564,7 @@ function Best() {
             },
             {
                 id: 9,
-                src: '/images/monthAllBest/monthAllBest09.png',
+                path: '/images/monthAllBest/monthAllBest09.png',
                 best: 'BEST',
                 name: '그린티 히알루론산 수분크림 / 저자극 진정 끈적이지않는 수분크림',
                 pri1: '20,250',
@@ -576,7 +576,7 @@ function Best() {
             },
             {
                 id: 10,
-                src: '/images/monthAllBest/monthAllBest10.jpg',
+                path: '/images/monthAllBest/monthAllBest10.jpg',
                 best: 'BEST',
                 name: '블랙티 유스 인핸싱 앰플 [대용량] x 2개 패키지',
                 pri1: '76,700',
@@ -588,7 +588,7 @@ function Best() {
             },
             {
                 id: 11,
-                src: '/images/monthAllBest/monthAllBest11.jpg',
+                path: '/images/monthAllBest/monthAllBest11.jpg',
                 best: 'BEST',
                 name: '포레스트 포맨 올인원 에센스 / 남자피부관리 남자스킨로션 민감성',
                 pri1: '23,200',
@@ -599,7 +599,7 @@ function Best() {
             },
             {
                 id: 12,
-                src: '/images/monthAllBest/monthAllBest12.jpg',
+                path: '/images/monthAllBest/monthAllBest12.jpg',
                 best: 'BEST',
                 name: '애플씨드 립앤아이 메이크업 리무버 / 마스카라 클렌징 워터리 세안제',
                 pri1: '9,000',
@@ -608,7 +608,7 @@ function Best() {
             },
             {
                 id: 13,
-                src: '/images/monthAllBest/monthAllBest13.jpg',
+                path: '/images/monthAllBest/monthAllBest13.jpg',
                 best: 'BEST',
                 name: '[장원영 pick] [25mL] 레티놀 PDRN 스킨부스터 앰플',
                 pri1: '32,000',
@@ -620,7 +620,7 @@ function Best() {
             },
             {
                 id: 14,
-                src: '/images/monthAllBest/monthAllBest14.jpg',
+                path: '/images/monthAllBest/monthAllBest14.jpg',
                 best: 'BEST',
                 name: '[더블기획] 비타C 잡티토닝패드 / 브라이트닝 화이트닝 토너패드 피부톤',
                 pri1: '39,200',
@@ -631,7 +631,7 @@ function Best() {
             },
             {
                 id: 15,
-                src: '/images/monthAllBest/monthAllBest15.png',
+                path: '/images/monthAllBest/monthAllBest15.png',
                 best: 'BEST',
                 name: '블랙티 유스 앰플[대용량] 50mL + 블랙티 크림 50mL',
                 pri1: '61,750',
@@ -643,7 +643,7 @@ function Best() {
             },
             {
                 id: 16,
-                src: '/images/monthAllBest/monthAllBest16.jpg',
+                path: '/images/monthAllBest/monthAllBest16.jpg',
                 best: 'BEST',
                 name: '올리브 비타민 E 리얼 폼 클렌징',
                 pri1: '7,000',
@@ -654,7 +654,7 @@ function Best() {
             },
             {
                 id: 17,
-                src: '/images/monthAllBest/monthAllBest17.jpg',
+                path: '/images/monthAllBest/monthAllBest17.jpg',
                 best: 'BEST',
                 name: '올리브 비타민 E 리얼 클렌징 오일',
                 pri1: '13,250',
@@ -665,7 +665,7 @@ function Best() {
             },
             {
                 id: 18,
-                src: '/images/monthAllBest/monthAllBest18.jpg',
+                path: '/images/monthAllBest/monthAllBest18.jpg',
                 best: 'BEST',
                 name: '그린티 히알루론산 수분 선세럼 SPF50+ PA++++ / 속광',
                 pri1: '21,000',
@@ -676,7 +676,7 @@ function Best() {
             },
             {
                 id: 19,
-                src: '/images/monthAllBest/monthAllBest19.jpg',
+                path: '/images/monthAllBest/monthAllBest19.jpg',
                 best: 'BEST',
                 name: '유채꿀 립밤',
                 pri1: '7,000',
@@ -687,7 +687,7 @@ function Best() {
             },
             {
                 id: 20,
-                src: '/images/monthAllBest/monthAllBest20.jpg',
+                path: '/images/monthAllBest/monthAllBest20.jpg',
                 best: 'BEST',
                 name: '톤업 노세범 선스크린 EX SPF50+ PA++++',
                 pri1: '18,000',
@@ -745,17 +745,15 @@ function Best() {
                     <span> 기준</span>
                 </div>
             </div>
-            <div>
-                <div>
-                    {renderData().map((item) => (
-                        <div key={item.id} style={{ border: "1px solid #ddd", margin: "10px", padding: "10px" }}>
-                            {item.src}
-                            <h3>{item.name}</h3>
-                            <p>{item.pri1}</p>
-                            <p>{item.star}</p>
-                        </div>
-                    ))}
-                </div>
+            <div className="wrapInner">
+                {renderData().map((item) => (
+                    <div key={item.id} className="itemList">
+                        {item.path}
+                        <h3>{item.name}</h3>
+                        <p>{item.pri1}</p>
+                        <p>{item.star}</p>
+                    </div>
+                ))}
             </div>
         </div>
     );
