@@ -9,7 +9,7 @@ import styles from "./suggestItem.module.css";
 
 function SuggestItem() {
     var settings = {
-        infinite: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 5,
         slidesToScroll: 1,

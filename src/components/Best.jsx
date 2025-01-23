@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-import Moment from 'react-moment';
-import moment from 'moment';
 import './Best.css';
+import BestBannerlist from "../context/bestBannerList";
 
 function Best() {
-    const onTime = moment().startOf('hour');
-
     const [activeToggle, setActiveToggle] = useState(1);
 
     const bestData = {
@@ -717,57 +714,59 @@ function Best() {
     };
 
     return (
-        <div className="bestWrap">
-            <h2>베스트</h2>
-            <ul className="navMenu">
-                <li><Link to='./best/nowBest'>
-                    <button className="bestBtn" onClick={() => handleToggle(1)}>실시간 베스트</button>
-                </Link></li>
-                <li><Link to='./best/weekBest'
-                ><button className="bestBtn" onClick={() => handleToggle(2)}>주간 베스트</button>
-                </Link></li>
-                <li><Link to='./best/monthBest'>
-                    <button className="bestBtn" onClick={() => handleToggle(3)}>월간 베스트</button>
-                </Link></li>
-            </ul>
-            <div className="tabBar">
-                <ul className="tabMenu">
-                    <li className="tabAll">전체</li>
-                    <li>스킨케어</li>
-                    <li>메이크업</li>
-                    <li>남성</li>
-                    <li>바디/헤어/펫</li>
-                    <li>기획세트</li>
-                    <li>미용소품</li>
+        <>
+            <div className="bestWrap">
+                <h2>베스트</h2>
+                <ul className="navMenu">
+                    <li><Link to='./best/nowBest'>
+                        <button className="bestBtn" onClick={() => handleToggle(1)}>실시간 베스트</button>
+                    </Link></li>
+                    <li><Link to='./best/weekBest'
+                    ><button className="bestBtn" onClick={() => handleToggle(2)}>주간 베스트</button>
+                    </Link></li>
+                    <li><Link to='./best/monthBest'>
+                        <button className="bestBtn" onClick={() => handleToggle(3)}>월간 베스트</button>
+                    </Link></li>
                 </ul>
-            </div>
-            <div className="wrapInner">
-                {renderData().map((item) => (
-                    <div key={item.id} className="itemList">
-                        <div className="itemImg">
-                            {item.path}
+                <div className="tabBar">
+                    <ul className="tabMenu">
+                        <li className="tabAll">전체</li>
+                        <li>스킨케어</li>
+                        <li>메이크업</li>
+                        <li>남성</li>
+                        <li>바디/헤어/펫</li>
+                        <li>기획세트</li>
+                        <li>미용소품</li>
+                    </ul>
+                </div>
+                <div className="wrapInner">
+                    {renderData().map((item) => (
+                        <div key={item.id} className="itemList">
+                            <div className="itemImg">
+                                {item.path}
+                            </div>
+                            <div className="name">
+                                <strong className="best">{item.best} </strong>
+                                <span>{item.name}</span>
+                            </div>
+                            <div className="priBox">
+                                <strong className="pri1">{item.pri1}</strong>
+                                <span className="sale">{item.sale}</span>
+                                <span className="pri2">{item.pri2}</span>
+                            </div>
+                            {item.free && <span className="free">{item.free}</span>}
+                            <div className="starGrabe">
+                                <span className="icon">{item.icon} </span>
+                                <span className="grabe">{item.star}</span>
+                            </div>
                         </div>
-                        <div className="name">
-                            <strong className="best">{item.best} </strong>
-                            <span>{item.name}</span>
-                        </div>
-                        <div className="priBox">
-                            <strong className="pri1">{item.pri1}</strong>
-                            <span className="sale">{item.sale}</span>
-                            <span className="pri2">{item.pri2}</span>
-                        </div>
-                        {item.free && <span className="free">{item.free}</span>}
-                        <div className="starGrabe">
-                            <span className="icon">{item.icon} </span>
-                            <span className="grabe">{item.star}</span>
-                        </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
             <div className="bestBanner">
-                
+                    <BestBannerlist/>
             </div>
-        </div>
+        </>
     );
 }
 

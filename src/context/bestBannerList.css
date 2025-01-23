@@ -1,0 +1,43 @@
+.sliderWrap {
+    margin: 0 auto;
+    padding: 100px 0;
+    width: 1280px;
+}
+
+.slider-cnt {
+    width: 100%;
+}
+
+.slider-cnt img {
+    width: 413px;
+    height: 272px;
+}
+
+.slider-cnt .slick-prev:before,
+.slider-cnt .slick-next:before {
+    color: #00bc70;
+    opacity: 1;
+    font-size: 30px;
+}
+
+.slider-cnt .slick-prev:before {
+    position: relative;
+    left: -25px;
+}
+
+.slideList {
+    width: 413px;
+    cursor: pointer;
+}
+
+.date {
+    margin: 20px 0 5px;
+    color: #666666;
+    font-size: 14px;
+}
+
+.bannerName {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+}
