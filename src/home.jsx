@@ -6,14 +6,10 @@ import moment from 'moment';
 // react icons
 import { GoPlus } from "react-icons/go";
 import { IoIosArrowForward } from "react-icons/io";
-import { FaYoutube, FaInstagram, FaFacebookF } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { MdOutlineFileDownload } from "react-icons/md";
 // route
 import NowItem from './main/nowItem';
 import styles from './home.module.css';
 import SuggestItem from './main/suggestItem';
-import AddressBtn from './main/addressBtn';
 
 // 작성 날짜 : 2025-01-09
 // 파일의 역할 : home
@@ -235,37 +231,6 @@ function HomeArea() {
                         <img src="/images/snsImg2.jpg" alt="" />
                         <img src="/images/snsImg3.jpg" alt="" />
                         <img src="/images/snsImg4.jpg" alt="" />
-                    </div>
-                </div>
-            </article>
-
-            {/* Footer */}
-            <article className={styles.footer}>
-                <div className={styles.footerInner}>
-                    <div className={styles.fHeader}>
-                        <span>서비스 이용약관</span>
-                        <span className={styles.bold}>개인정보처리방침</span>
-                        <span>영상정보처리기기 운영/관리 방침</span>
-                        <span>위치기반서비스 이용약관</span>
-                        <span>공지사항</span>
-                        <span>임직원서비스</span>
-                    </div>
-                    <div>
-                        <AddressBtn/>
-                    </div>
-                    <div className={styles.counsel}>
-                        <p>이니스프리 제품 고객 상담 <span className={styles.bold}>080-380-0144</span></p>
-                        <span>평일 09:00 ~ 18:00 (점심시간 12:00 ~ 13:00)</span>
-                    </div>
-                    <div className={styles.snsIcon}>
-                        <FaYoutube size={30} />
-                        <FaInstagram size={30} />
-                        <FaFacebookF size={30} />
-                        <FaXTwitter size={30} />
-                        <MdOutlineFileDownload size={30} />
-                    </div>
-                    <div className={styles.info}>
-                        <span>Copyright ⓒ 2023 innisfree. All Rights Reserved.</span>
                     </div>
                 </div>
             </article>

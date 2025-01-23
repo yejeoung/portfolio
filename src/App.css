@@ -196,3 +196,53 @@ p {
 .contents {
     border-top: 1px solid #cdcdcd;
 }
+
+/* Footer */
+.footer {
+    margin-top: 200px;
+    height: 458px;
+    background-color: #00bc70;
+    color: #ffffff;
+}
+
+.footerInner {
+    display: grid;
+    justify-content: center;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.fHeader {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0 60px 0;
+    width: 885px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.counsel {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+.counsel p {
+    padding-bottom: 10px;
+}
+
+.snsIcon {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin: 0 auto;
+    width: 170px;
+    height: 90px;
+}
+
+.info {
+    text-align: center;
+    font-size: 16px;
+}

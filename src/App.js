@@ -1,12 +1,16 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import { RiLoginBoxLine } from "react-icons/ri";
+// css
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 // react icons
 import { GoPerson } from "react-icons/go";
 import { AiOutlineShopping } from "react-icons/ai";
 import { IoSearch } from "react-icons/io5";
+import { FaYoutube, FaInstagram, FaFacebookF } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { MdOutlineFileDownload } from "react-icons/md";
 // Route
 import HomeArea from './home.jsx';
 import Hotdeal from './components/Hotdeal';
@@ -14,7 +18,7 @@ import Event from './components/Event.jsx';
 import Best from './components/Best.jsx';
 import Langs from './langs.jsx';
 import Category from './main/category.jsx';
-// css
+import AddressBtn from './addressBtn.jsx';
 import { Provider } from './data/context.js';
 
 // yarn add react-router-dom@5
@@ -36,7 +40,7 @@ function App() {
           <h1 className='logo'><Link to='/'><img src='/images/logo.png' alt=''></img></Link></h1>
           <div className='serach'>
             <input className='searchInput' type='text' placeholder='검색어를 입력해주세요.'></input>
-            <button type='submit'><IoSearch size={24}/></button>
+            <button type='submit'><IoSearch size={24} /></button>
           </div>
           <ul className='info'>
             <li className='LoginIcon'><Link to='/components/Login'><RiLoginBoxLine />로그인</Link></li>
@@ -65,7 +69,37 @@ function App() {
         <Route path='/components/Event' component={Event}></Route>
         <Route path='/components/Best' component={Best}></Route>
       </div>
+      <div className='footer'>
+        <div className='footerInner'>
+          <div className='fHeader'>
+            <span>서비스 이용약관</span>
+            <span className='bold'>개인정보처리방침</span>
+            <span>영상정보처리기기 운영/관리 방침</span>
+            <span>위치기반서비스 이용약관</span>
+            <span>공지사항</span>
+            <span>임직원서비스</span>
+          </div>
+          <div>
+            <AddressBtn />
+          </div>
+          <div className='counsel'>
+            <p>이니스프리 제품 고객 상담 <span className='bold'>080-380-0144</span></p>
+            <span>평일 09:00 ~ 18:00 (점심시간 12:00 ~ 13:00)</span>
+          </div>
+          <div className='snsIcon'>
+            <FaYoutube size={30} />
+            <FaInstagram size={30} />
+            <FaFacebookF size={30} />
+            <FaXTwitter size={30} />
+            <MdOutlineFileDownload size={30} />
+          </div>
+          <div className='info'>
+            <span>Copyright ⓒ 2023 innisfree. All Rights Reserved.</span>
+          </div>
+        </div>
+      </div>
     </Provider>
+
   );
 }
 

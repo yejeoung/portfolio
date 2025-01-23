@@ -75,17 +75,70 @@
     background-color: #ffffff;
 }
 
-.bestTime {
-    color: #999e9c;
-}
-
 /* 제품 데이터 */
 .wrapInner {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 1280px;
 }
 
 .itemList{
     width: 240px;
+}
+
+.itemImg {
+    width: 240px;
+    height: 320px;
+}
+
+.name {
+    font-size: 14px;
+    color: #666666;
+    font-weight: 400;
+}
+
+.priBox {
+    position: relative;
+    margin-top: 10px;
+}
+
+.pri1{
+    font-size: 20px;
+}
+
+.sale {
+    margin-left: 10px;
+    font-size: 20px;
+    color: #ff0000;
+}
+
+.pri2 {
+    position: absolute;
+    margin-left: 15px;
+    font-size: 14px;
+    line-height: 1.29em;
+    text-decoration: line-through;
+    color: #999;
+    font-weight: 300;
+    line-height: 2.1;
+}
+
+.free {
+    padding: 0 5px;
+    margin-top: 20px;
+    height: 18px;
+    color: #00bc70;
+    background-color: #e0fbf0;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.starGrabe {
+    margin-top: 15px;
+}
+
+.grabe {
+    color: #999e9c;
+    font-size: 12px;
 }

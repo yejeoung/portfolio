@@ -1,6 +1,6 @@
 import React from "react";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
-import '../main/addressBtn.css';
+import './addressBtn.css';
 
 function AddressBtn() {
     const addressClick = (e) => {

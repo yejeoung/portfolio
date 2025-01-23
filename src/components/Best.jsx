@@ -13,7 +13,7 @@ function Best() {
         nowAllData: [
             {
                 id: 1,
-                path: (process.env.PUBLIC_URL +'/images/nowAllBest/nowAllBest01.jpg'),
+                path: (process.env.PUBLIC_URL + '/images/nowAllBest/nowAllBest01.jpg'),
                 best: 'BEST',
                 name: '애플씨드 클렌징 오일',
                 pri1: '10,500',
@@ -740,18 +740,27 @@ function Best() {
                     <li>기획세트</li>
                     <li>미용소품</li>
                 </ul>
-                <div className="bestTime">
-                    <Moment format='YYYY-MM-DD HH:mm'>{onTime}</Moment>
-                    <span> 기준</span>
-                </div>
             </div>
             <div className="wrapInner">
                 {renderData().map((item) => (
                     <div key={item.id} className="itemList">
-                        {item.path}
-                        <h3>{item.name}</h3>
-                        <p>{item.pri1}</p>
-                        <p>{item.star}</p>
+                        <div className="itemImg">
+                            {item.path}
+                        </div>
+                        <div className="name">
+                            <strong className="best">{item.best} </strong>
+                            <span>{item.name}</span>
+                        </div>
+                        <div className="priBox">
+                            <strong className="pri1">{item.pri1}</strong>
+                            <span className="sale">{item.sale}</span>
+                            <span className="pri2">{item.pri2}</span>
+                        </div>
+                        {item.free && <span className="free">{item.free}</span>}
+                        <div className="starGrabe">
+                            <span className="icon">{item.icon} </span>
+                            <span className="grabe">{item.star}</span>
+                        </div>
                     </div>
                 ))}
             </div>
