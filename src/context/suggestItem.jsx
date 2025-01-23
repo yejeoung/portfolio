@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "./suggestItem.module.css";
 
-// 파일의 역할 : 추천 제품 리스트트
+// 파일의 역할 : 추천 제품 리스트
 
 function SuggestItem() {
     var settings = {

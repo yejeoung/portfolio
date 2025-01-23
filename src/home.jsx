@@ -7,9 +7,9 @@ import moment from 'moment';
 import { GoPlus } from "react-icons/go";
 import { IoIosArrowForward } from "react-icons/io";
 // route
-import NowItem from './main/nowItem';
+import NowItem from './context/nowItem';
 import styles from './home.module.css';
-import SuggestItem from './main/suggestItem';
+import SuggestItem from './context/suggestItem';
 
 // 작성 날짜 : 2025-01-09
 // 파일의 역할 : home

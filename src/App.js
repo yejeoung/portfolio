@@ -17,7 +17,7 @@ import Hotdeal from './components/Hotdeal';
 import Event from './components/Event.jsx';
 import Best from './components/Best.jsx';
 import Langs from './langs.jsx';
-import Category from './main/category.jsx';
+import Category from './context/category.jsx';
 import AddressBtn from './addressBtn.jsx';
 import { Provider } from './data/context.js';
 

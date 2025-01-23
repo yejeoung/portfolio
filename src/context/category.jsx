@@ -1,7 +1,7 @@
 import React from "react";
 import { IoMenu } from "react-icons/io5";
 import Accordion from 'react-bootstrap/Accordion';
-import '../main/category.css';
+import './category.css';
 
 // 파일의 역할 : 카테고리 메뉴
 

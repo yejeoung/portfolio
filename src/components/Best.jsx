@@ -764,6 +764,9 @@ function Best() {
                     </div>
                 ))}
             </div>
+            <div className="bestBanner">
+                
+            </div>
         </div>
     );
 }
