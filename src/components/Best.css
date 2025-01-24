@@ -78,7 +78,8 @@
 /* 제품 데이터 */
 .wrapInner {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px 20px;
     flex-wrap: wrap;
     width: 1280px;
 }
@@ -88,11 +89,28 @@
 }
 
 .itemImg {
+    position: relative;
+}
+
+.number {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.itemImg img {
     width: 240px;
     height: 320px;
+    cursor: pointer;
 }
 
 .name {
+    margin-top: 20px;
     font-size: 14px;
     color: #666666;
     font-weight: 400;
