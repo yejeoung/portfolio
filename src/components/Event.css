@@ -1,0 +1,98 @@
+.eventWrap {
+    margin: 0 auto;
+    width: 1280px;
+}
+
+.eventHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 60px 0 30px;
+}
+
+.eventWrap h2 {
+    font-size: 38px;
+    font-weight: 300;
+}
+
+.eventWrap div {
+    font-size: 14px;
+    line-height: 1.43em;
+    cursor: pointer;
+}
+
+.eventNavMenu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    height: 51px;
+    line-height: 3;
+    padding: 0;
+    list-style: none;
+}
+
+.eventNavMenu li {
+    width: 100%;
+    text-align: center;
+}
+
+.eventBtn {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border: 1px solid #cdcdcd;
+    color: #666666;
+}
+
+.eventBtn:hover {
+    border-color: #00bc70;
+    color: #00bc70;
+    font-weight: 600;
+}
+
+.eventBtn:active{
+    border-color: #000000;
+    font-weight: bold;
+    color: #000000;
+}
+
+.eventWrapInner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.eventImg {
+    position: relative;
+}
+
+.boon {
+    position: absolute;
+    padding: 3px 5px;
+    font-size: 14px;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.eventImg img {
+    width: 413px;
+    height: 272px;
+}
+
+.eventCnt {
+    height: 114px;
+}
+
+.eventDate {
+    margin: 20px 0 5px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.eventName {
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 16px;
+}
