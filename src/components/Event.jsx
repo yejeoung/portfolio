@@ -88,7 +88,7 @@ function Event() {
                 path: '/images/event/card01.jpg',
                 date: '25.1.25(토) ~ 25.1.31(금)',
                 name1: '삼성카드 링크데이 혜택!',
-                name2: '링크하고 10% 결제일 할인인'
+                name2: '링크하고 10% 결제일 할인'
             },
             {
                 id: 2,
