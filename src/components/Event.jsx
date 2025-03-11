@@ -156,7 +156,7 @@ function Event() {
                         <div key={item.id} className="eventList">
                             <div className="eventImg">
                                 <span className="boon">{item.boon}</span>
-                                <img src={item.path} alt="" />
+                                <img src={process.env.PUBLIC_URL + item.path} alt="" />
                             </div>
                             <div className="eventCnt">
                                 <p className="eventDate">{item.date}</p>

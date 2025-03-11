@@ -804,7 +804,7 @@ function Best() {
                         <div key={item.id} className="itemList">
                             <div className="itemImg">
                                 <span className="number">{item.num}</span>
-                                <img src={item.path} alt="" />
+                                <img src={process.env.PUBLIC_URL + item.path} alt="" />
                             </div>
                             <div className="name">
                                 <strong className="best">{item.best} </strong>

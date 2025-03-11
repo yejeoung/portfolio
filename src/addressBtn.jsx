@@ -19,7 +19,7 @@ function AddressBtn() {
     return (
         <>
             <div className='footerLogo'>
-                <img src="/images/footerLogo.png" alt="" />
+                <img src={process.env.PUBLIC_URL +'/images/footerLogo.png'} alt="" />
             <button className='addressBtn' onClick={addressClick}>
                 <IoIosArrowDropdownCircle size={30} color='white' />
             </button>

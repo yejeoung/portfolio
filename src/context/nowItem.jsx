@@ -11,7 +11,7 @@ function NowItem() {
             {/* 첫 번째 줄 */}
             <div className={styles.nowBest}>
                 <div className={styles.nowItem}>
-                    <img src="/images/nbImg01.jpg" alt="" />
+                    <img src={process.env.PUBLIC_URL +'/images/nbImg01.jpg'} alt="" />
                     <div className={styles.nIText}>
                         <div className={styles.nIText1}>
                             <span><span className={styles.bold}>BEST</span>[마이멜로디 에디션] 그린티 수분세럼 80mL+그린티 수분크림50mL</span>
@@ -28,7 +28,7 @@ function NowItem() {
                     </div>
                 </div>
                 <div className={styles.nowItem}>
-                    <img src="/images/nbImg02.png" alt="" />
+                    <img src={process.env.PUBLIC_URL +'/images/nbImg02.png'} alt="" />
                     <div className={styles.nIText}>
                         <div className={styles.nIText1}>
                             <span><span className={styles.bold}>BEST</span>[장원영 pick] 레티놀 그린티 PDRN 스킨부스터 앰플</span>
@@ -45,7 +45,7 @@ function NowItem() {
                     </div>
                 </div>
                 <div className={styles.nowItem}>
-                    <img src="/images/nbImg03.png" alt="" />
+                    <img src={process.env.PUBLIC_URL +'/images/nbImg03.png'} alt="" />
                     <div className={styles.nIText}>
                         <div className={styles.nIText1}>
                             <span><span className={styles.bold}>Best</span>[파우치 증정] 레티놀 그린티 PDRN 앰플 대용량 x 2개</span>
@@ -62,7 +62,7 @@ function NowItem() {
                     </div>
                 </div>
                 <div className={styles.nowItem}>
-                    <img src="/images/nbImg04.jpg" alt="" />
+                    <img src={process.env.PUBLIC_URL +'/images/nbImg04.jpg'} alt="" />
                     <div className={styles.nIText}>
                         <div className={styles.nIText1}>
                             <span><span className={styles.bold}>Best</span>에너지 마스크</span>
@@ -77,7 +77,7 @@ function NowItem() {
                     </div>
                 </div>
                 <div className={styles.nowItem}>
-                    <img src="/images/nbImg05.png" alt="" />
+                    <img src={process.env.PUBLIC_URL +'/images/nbImg05.png'} alt="" />
                     <div className={styles.nIText}>
                         <div className={styles.nIText1}>
                             <span><span className={styles.bold}>Best</span>[장원영 pick] 레티놀 그린티 PDRN 앰플 [대용량]</span>
@@ -98,7 +98,7 @@ function NowItem() {
             {/* 두 번째 줄 */}
             <div className={styles.nowBest}>
                 <div className={styles.nowItem}>
-                    <img src="/images/nbImg06.png" alt="" />
+                    <img src={process.env.PUBLIC_URL +'/images/nbImg06.png'} alt="" />
                     <div className={styles.nIText}>
                         <div className={styles.nIText1}>
                             <span><span className={styles.bold}>BEST</span>레티놀 PDRN 토너 170mL+스킨팩 5겹 화장솜 80매</span>
@@ -115,7 +115,7 @@ function NowItem() {
                     </div>
                 </div>
                 <div className={styles.nowItem}>
-                    <img src="/images/nbImg07.jpg" alt="" />
+                    <img src={process.env.PUBLIC_URL +'/images/nbImg07.jpg'} alt="" />
                     <div className={styles.nIText}>
                         <div className={styles.nIText1}>
                             <span><span className={styles.bold}>BEST</span>[마이멜로디 에디션] 그린티 히알루론산 수분세럼</span>
@@ -132,7 +132,7 @@ function NowItem() {
                     </div>
                 </div>
                 <div className={styles.nowItem}>
-                    <img src="/images/nbImg08.jpg" alt="" />
+                    <img src={process.env.PUBLIC_URL +'/images/nbImg08.jpg'} alt="" />
                     <div className={styles.nIText}>
                         <div className={styles.nIText1}>
                             <span><span className={styles.bold}>Best</span>레티놀 그린티 PDRN 스킨부스터 토너</span>
@@ -149,7 +149,7 @@ function NowItem() {
                     </div>
                 </div>
                 <div className={styles.nowItem}>
-                    <img src="/images/nbImg09.png" alt="" />
+                    <img src={process.env.PUBLIC_URL +'/images/nbImg09.png'} alt="" />
                     <div className={styles.nIText}>
                         <div className={styles.nIText1}>
                             <span><span className={styles.bold}>Best</span>레티놀 그린티 PDRN 앰플 40mL+레티놀 PDRN 토너 170mL</span>
@@ -166,7 +166,7 @@ function NowItem() {
                     </div>
                 </div>
                 <div className={styles.nowItem}>
-                    <img src="/images/nbImg10.jpg" alt="" />
+                    <img src={process.env.PUBLIC_URL +'/images/nbImg10.jpg'} alt="" />
                     <div className={styles.nIText}>
                         <div className={styles.nIText1}>
                             <span><span className={styles.bold}>Best</span>액티브 마스크</span>

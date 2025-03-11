@@ -37,7 +37,7 @@ function App() {
       <header className='header'>
         <div className='language'><Langs /></div>
         <div className='h_top'>
-          <h1 className='logo'><Link to='/'><img src='/images/logo.png' alt=''></img></Link></h1>
+          <h1 className='logo'><Link to='/'><img src={process.env.PUBLIC_URL +'/images/logo.png'} alt=''></img></Link></h1>
           <div className='serach'>
             <input className='searchInput' type='text' placeholder='검색어를 입력해주세요.'></input>
             <button type='submit'><IoSearch size={24} /></button>

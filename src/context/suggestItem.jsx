@@ -20,7 +20,7 @@ function SuggestItem() {
             <Slider {...settings}>
                 <div className={styles.suggestBox}>
                     <div className={styles.suggestItem}>
-                        <img src="/images/suggestImg01.png" alt="" />
+                        <img src={process.env.PUBLIC_URL +'/images/suggestImg01.png'} alt="" />
                         <div className={styles.sText}>
                             <div className={styles.sText1}>
                                 <span><span className={styles.bold}>BEST</span>콜라겐 그린티 세라마이드 탄력장벽크림 50mL + 리필</span>
@@ -43,7 +43,7 @@ function SuggestItem() {
                 </div>
                 <div>
                     <div className={styles.suggestItem}>
-                        <img src="/images/suggestImg02.png" alt="" />
+                        <img src={process.env.PUBLIC_URL +'/images/suggestImg02.png'} alt="" />
                         <div className={styles.sText}>
                             <div className={styles.sText1}>
                                 <span><span className={styles.bold}>BEST</span>블랙티 유스 인핸싱 앰플</span>
@@ -66,7 +66,7 @@ function SuggestItem() {
                 </div>
                 <div>
                     <div className={styles.suggestItem}>
-                        <img src="/images/suggestImg03.png" alt="" />
+                        <img src={process.env.PUBLIC_URL +'/images/suggestImg03.png'} alt="" />
                         <div className={styles.sText}>
                             <div className={styles.sText1}>
                                 <span><span className={styles.bold}>BEST</span>블랙티 유스 인핸싱 앰플 [대용량] x 2개 패키지</span>
@@ -89,7 +89,7 @@ function SuggestItem() {
                 </div>
                 <div>
                     <div className={styles.suggestItem}>
-                        <img src="/images/suggestImg04.jpg" alt="" />
+                        <img src={process.env.PUBLIC_URL +'/images/suggestImg04.jpg'} alt="" />
                         <div className={styles.sText}>
                             <div className={styles.sText1}>
                                 <span><span className={styles.bold}>BEST</span>블랙티 유스 인핸싱 트리트먼트 에센스</span>
@@ -112,7 +112,7 @@ function SuggestItem() {
                 </div>
                 <div>
                     <div className={styles.suggestItem}>
-                        <img src="/images/suggestImg05.jpg" alt="" />
+                        <img src={process.env.PUBLIC_URL +'/images/suggestImg05.jpg'} alt="" />
                         <div className={styles.sText}>
                             <div className={styles.sText1}>
                                 <span><span className={styles.bold}>BEST</span>블랙티 유스 인핸싱 스킨케어 세트</span>
@@ -135,7 +135,7 @@ function SuggestItem() {
                 </div>
                 <div>
                     <div className={styles.suggestItem}>
-                        <img src="/images/suggestImg06.jpg" alt="" />
+                        <img src={process.env.PUBLIC_URL +'/images/suggestImg06.jpg'} alt="" />
                         <div className={styles.sText}>
                             <div className={styles.sText1}>
                                 <span><span className={styles.bold}>BEST</span>블랙티 유스 인핸싱 크림</span>
@@ -158,7 +158,7 @@ function SuggestItem() {
                 </div>
                 <div>
                     <div className={styles.suggestItem}>
-                        <img src="/images/suggestImg07.png" alt="" />
+                        <img src={process.env.PUBLIC_URL +'/images/suggestImg07.png'} alt="" />
                         <div className={styles.sText}>
                             <div className={styles.sText1}>
                                 <span>[대용량] 블랙티 유스 인핸싱 앰플 / 미백 탄력케어 피부결 보습</span>
@@ -181,7 +181,7 @@ function SuggestItem() {
                 </div>
                 <div>
                     <div className={styles.suggestItem}>
-                        <img src="/images/suggestImg08.png" alt="" />
+                        <img src={process.env.PUBLIC_URL +'/images/suggestImg08.png'} alt="" />
                         <div className={styles.sText}>
                             <div className={styles.sText1}>
                                 <span><span className={styles.bold}>BEST</span>블랙티 유스 앰플[대용량] 50mL+블랙티 크림 50mL</span>
@@ -204,7 +204,7 @@ function SuggestItem() {
                 </div>
                 <div>
                     <div className={styles.suggestItem}>
-                        <img src="/images/suggestImg09.jpg" alt="" />
+                        <img src={process.env.PUBLIC_URL +'/images/suggestImg09.jpg'} alt="" />
                         <div className={styles.sText}>
                             <div className={styles.sText1}>
                                 <span><span className={styles.bold}>BEST</span>한란 인리치드 크림</span>
@@ -227,7 +227,7 @@ function SuggestItem() {
                 </div>
                 <div>
                     <div className={styles.suggestItem}>
-                        <img src="/images/suggestImg10.jpg" alt="" />
+                        <img src={process.env.PUBLIC_URL +'/images/suggestImg10.jpg'} alt="" />
                         <div className={styles.sText}>
                             <div className={styles.sText1}>
                                 <span>콜라겐 그린티 세라마이드 탄력장벽 크림 [리필]</span>

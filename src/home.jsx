@@ -33,7 +33,7 @@ function HomeArea() {
             <section className={styles.main}>
                 <Carousel activeIndex={index} onSelect={handleSelect}>
                     <Carousel.Item>
-                        <img src="/images/main01.jpg" alt="" />
+                        <img src={process.env.PUBLIC_URL +'/images/main01.jpg'} alt="" />
                         <Carousel.Caption>
                             <div className={styles.cntArea}>
                                 <div className={styles.card}>
@@ -52,7 +52,7 @@ function HomeArea() {
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img src="/images/main02.jpg" alt="" />
+                        <img src={process.env.PUBLIC_URL +'/images/main02.jpg'} alt="" />
                         <Carousel.Caption>
                             <div className={styles.cntArea}>
                                 <div className={styles.card}>
@@ -68,7 +68,7 @@ function HomeArea() {
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img src="/images/main03.jpg" alt="" />
+                        <img src={process.env.PUBLIC_URL +'/images/main03.jpg'} alt="" />
                         <Carousel.Caption>
                             <div className={styles.cntArea}>
                                 <div className={styles.card}>
@@ -83,7 +83,7 @@ function HomeArea() {
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img src="/images/main04.jpg" alt="" />
+                        <img src={process.env.PUBLIC_URL +'/images/main04.jpg'} alt="" />
                         <Carousel.Caption>
                             <div className={styles.cntArea}>
                                 <div className={styles.card}>
@@ -103,7 +103,7 @@ function HomeArea() {
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img src="/images/main05.jpg" alt="" />
+                        <img src={process.env.PUBLIC_URL +'/images/main05.jpg'} alt="" />
                         <Carousel.Caption>
                             <div className={styles.cntArea}>
                                 <div className={styles.card}>
@@ -122,7 +122,7 @@ function HomeArea() {
             <article className='content'>
                 {/* 출시 된 제품 */}
                 <div className={styles.newItem}>
-                    <img src="/images/newItem01.jpg" alt="" />
+                    <img src={process.env.PUBLIC_URL +'/images/newItem01.jpg'} alt="" />
                     <div className={styles.newText}>
                         <p>PDRN 대용량 출시기념!</p>
                         <p>파우치+사은품 증정!</p>
@@ -147,7 +147,7 @@ function HomeArea() {
                 <div className={styles.newItem2}>
                     <div className={styles.item}>
                         <div>
-                            <img src="/images/item1.jpg" alt="" />
+                            <img src={process.env.PUBLIC_URL +'/images/item1.jpg'} alt="" />
                         </div>
                         <div className={styles.itemText}>
                             <div className={styles.itemText1}><p>1.1(수) 오전 12:00</p></div>
@@ -161,7 +161,7 @@ function HomeArea() {
                         </div>
                     </div>
                     <div className={styles.item}>
-                        <img src="/images/item2.jpg" alt="" />
+                        <img src={process.env.PUBLIC_URL +'/images/item2.jpg'} alt="" />
                         <div className={styles.itemText}>
                             <div className={styles.itemText1}><p>12.1(일) 오전 12:00</p></div>
                             <div className={styles.itemText2}>
@@ -227,10 +227,10 @@ function HomeArea() {
                         </div>
                     </div>
                     <div className={styles.snsImg}>
-                        <img src="/images/snsImg1.png" alt="" />
-                        <img src="/images/snsImg2.jpg" alt="" />
-                        <img src="/images/snsImg3.jpg" alt="" />
-                        <img src="/images/snsImg4.jpg" alt="" />
+                        <img src={process.env.PUBLIC_URL +'/images/snsImg1.png'} alt="" />
+                        <img src={process.env.PUBLIC_URL +'/images/snsImg2.jpg'} alt="" />
+                        <img src={process.env.PUBLIC_URL +'/images/snsImg3.jpg'} alt="" />
+                        <img src={process.env.PUBLIC_URL +'/images/snsImg4.jpg'} alt="" />
                     </div>
                 </div>
             </article>
